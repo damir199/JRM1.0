@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8EE6A7F-6074-4FB1-ACE0-8083E58B9B2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>borderless_windowless</RootNamespace>
+    <AssemblyName>borderless_windowless</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Create_Repair_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Create_Repair_Control.Designer.cs">
+      <DependentUpon>Create_Repair_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Create_User_Control.Designer.cs">
+      <DependentUpon>Create_User_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_Rep_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Find_Rep_Control.Designer.cs">
+      <DependentUpon>Find_Rep_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_Customer_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Find_Customer_Control.Designer.cs">
+      <DependentUpon>Find_Customer_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login_Control.Designer.cs">
+      <DependentUpon>Login_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main_Control.Designer.cs">
+      <DependentUpon>Main_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View_Repair_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Repair_Control.Designer.cs">
+      <DependentUpon>View_Repair_Control.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Create_Repair_Control.resx">
+      <DependentUpon>Create_Repair_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_User_Control.resx">
+      <DependentUpon>Create_User_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Rep_Control.resx">
+      <DependentUpon>Find_Rep_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Customer_Control.resx">
+      <DependentUpon>Find_Customer_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Control.resx">
+      <DependentUpon>Login_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Control.resx">
+      <DependentUpon>Main_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View_Repair_Control.resx">
+      <DependentUpon>View_Repair_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
