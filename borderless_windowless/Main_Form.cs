@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace borderless_windowless
 {
-    public partial class Form1 : Form
+    public partial class Main_Form : Form
     {
-        static Form1 _obj;
+        static Main_Form _obj;
 
-        public static Form1 Instance
+        public static Main_Form Instance
         {
             get
             {
                 if(_obj == null)
                 {
-                    _obj = new Form1();
+                    _obj = new Main_Form();
                 }
                 return _obj;
             }
@@ -33,7 +33,7 @@ namespace borderless_windowless
             set { Body_Panel = value; }
 
         }
-        public Form1()
+        public Main_Form()
         {
             InitializeComponent();
         }

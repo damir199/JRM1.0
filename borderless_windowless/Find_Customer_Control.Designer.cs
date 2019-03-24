@@ -90,7 +90,7 @@
             this.Controls.Add(this.Search_Label);
             this.Controls.Add(this.Search_Repair_Button);
             this.Name = "Find_Customer_Control";
-            this.Size = new System.Drawing.Size(1093, 1044);
+            this.Size = new System.Drawing.Size(1150, 1000);
             this.ResumeLayout(false);
             this.PerformLayout();
 

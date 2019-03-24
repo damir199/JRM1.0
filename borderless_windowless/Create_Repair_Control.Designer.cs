@@ -339,7 +339,7 @@
             this.Controls.Add(this.Category_Label);
             this.Controls.Add(this.Add_Repair_Button);
             this.Name = "Create_Repair_Control";
-            this.Size = new System.Drawing.Size(1093, 1044);
+            this.Size = new System.Drawing.Size(1150, 1000);
             this.ResumeLayout(false);
             this.PerformLayout();
 

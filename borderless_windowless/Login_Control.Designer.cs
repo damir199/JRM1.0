@@ -95,7 +95,7 @@
             this.Controls.Add(this.Username_Label);
             this.Controls.Add(this.Login_Button);
             this.Name = "Login_Control";
-            this.Size = new System.Drawing.Size(1093, 1044);
+            this.Size = new System.Drawing.Size(1150, 1000);
             this.ResumeLayout(false);
             this.PerformLayout();
 

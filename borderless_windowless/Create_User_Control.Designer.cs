@@ -311,7 +311,7 @@
             this.Controls.Add(this.Deposit_Amount_Label);
             this.Controls.Add(this.Deposit_Label);
             this.Name = "Create_User_Control";
-            this.Size = new System.Drawing.Size(1093, 1044);
+            this.Size = new System.Drawing.Size(1150, 1000);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -197,7 +197,7 @@
             this.Controls.Add(this.Customers_Button);
             this.Controls.Add(this.Repairs_Button);
             this.Name = "Main_Control";
-            this.Size = new System.Drawing.Size(1093, 1044);
+            this.Size = new System.Drawing.Size(1150, 1000);
             this.ResumeLayout(false);
 
         }
