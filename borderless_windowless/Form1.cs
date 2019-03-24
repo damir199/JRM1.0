@@ -41,11 +41,6 @@ namespace borderless_windowless
         
         
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Dispose();
-        }
-
      
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -59,6 +54,16 @@ namespace borderless_windowless
             Body_Panel_Container.Controls["Home_Control"].BringToFront();
             
 
+        }
+
+        private void Back_Button_Click(object sender, EventArgs e)
+        {
+            Body_Panel_Container.Controls["Main_Control"].BringToFront();
+        }
+
+        private void Shutdown_Button_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

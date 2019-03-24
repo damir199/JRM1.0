@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.Login_Button = new System.Windows.Forms.Button();
-            this.Cancel_Button = new System.Windows.Forms.Button();
             this.Username_Label = new System.Windows.Forms.Label();
             this.Password_Label = new System.Windows.Forms.Label();
             this.Username_TB = new System.Windows.Forms.TextBox();
@@ -48,20 +47,6 @@
             this.Login_Button.TabIndex = 0;
             this.Login_Button.Text = "Login";
             this.Login_Button.UseVisualStyleBackColor = false;
-            // 
-            // Cancel_Button
-            // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancel_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel_Button.ForeColor = System.Drawing.Color.White;
-            this.Cancel_Button.Location = new System.Drawing.Point(433, 610);
-            this.Cancel_Button.Name = "Cancel_Button";
-            this.Cancel_Button.Size = new System.Drawing.Size(274, 141);
-            this.Cancel_Button.TabIndex = 1;
-            this.Cancel_Button.Text = "Cancel";
-            this.Cancel_Button.UseVisualStyleBackColor = false;
-            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
             // Username_Label
             // 
@@ -108,7 +93,6 @@
             this.Controls.Add(this.Username_TB);
             this.Controls.Add(this.Password_Label);
             this.Controls.Add(this.Username_Label);
-            this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.Login_Button);
             this.Name = "Login_Control";
             this.Size = new System.Drawing.Size(1093, 1044);
@@ -120,7 +104,6 @@
         #endregion
 
         private System.Windows.Forms.Button Login_Button;
-        private System.Windows.Forms.Button Cancel_Button;
         private System.Windows.Forms.Label Username_Label;
         private System.Windows.Forms.Label Password_Label;
         private System.Windows.Forms.TextBox Username_TB;

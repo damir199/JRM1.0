@@ -36,7 +36,7 @@
             this.Shutdown_Button = new System.Windows.Forms.Button();
             this.Body_Panel = new System.Windows.Forms.Panel();
             this.Header_Panel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Back_Button = new System.Windows.Forms.Button();
             this.Date_Label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Time_Label = new System.Windows.Forms.Label();
@@ -44,7 +44,6 @@
             this.SideBar_Panel.SuspendLayout();
             this.Body_Panel.SuspendLayout();
             this.Header_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // SideBar_Panel
@@ -115,7 +114,7 @@
             this.Shutdown_Button.Size = new System.Drawing.Size(107, 107);
             this.Shutdown_Button.TabIndex = 0;
             this.Shutdown_Button.UseVisualStyleBackColor = true;
-            this.Shutdown_Button.Click += new System.EventHandler(this.button1_Click);
+            this.Shutdown_Button.Click += new System.EventHandler(this.Shutdown_Button_Click);
             // 
             // Body_Panel
             // 
@@ -129,7 +128,7 @@
             // Header_Panel
             // 
             this.Header_Panel.BackColor = System.Drawing.Color.Teal;
-            this.Header_Panel.Controls.Add(this.pictureBox1);
+            this.Header_Panel.Controls.Add(this.Back_Button);
             this.Header_Panel.Controls.Add(this.Date_Label);
             this.Header_Panel.Controls.Add(this.label1);
             this.Header_Panel.Controls.Add(this.Time_Label);
@@ -140,16 +139,25 @@
             this.Header_Panel.Size = new System.Drawing.Size(1093, 108);
             this.Header_Panel.TabIndex = 18;
             // 
-            // pictureBox1
+            // Back_Button
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.Back_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Back_Button.BackgroundImage")));
+            this.Back_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Back_Button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Back_Button.FlatAppearance.BorderSize = 0;
+            this.Back_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Back_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back_Button.ForeColor = System.Drawing.Color.White;
+            this.Back_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Back_Button.Location = new System.Drawing.Point(0, 0);
+            this.Back_Button.Name = "Back_Button";
+            this.Back_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Back_Button.Size = new System.Drawing.Size(97, 108);
+            this.Back_Button.TabIndex = 17;
+            this.Back_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Back_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Back_Button.UseVisualStyleBackColor = true;
+            this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 
             // Date_Label
             // 
@@ -165,11 +173,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(206, 18);
+            this.label1.Location = new System.Drawing.Point(297, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 78);
+            this.label1.Size = new System.Drawing.Size(168, 45);
             this.label1.TabIndex = 13;
             this.label1.Text = "JRM 1.0";
             // 
@@ -212,7 +220,6 @@
             this.Body_Panel.ResumeLayout(false);
             this.Header_Panel.ResumeLayout(false);
             this.Header_Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,10 +234,10 @@
         private System.Windows.Forms.Panel Body_Panel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel Header_Panel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Date_Label;
         private System.Windows.Forms.Label Time_Label;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Back_Button;
     }
 }
 
