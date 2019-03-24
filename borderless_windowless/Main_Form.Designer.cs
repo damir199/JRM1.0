@@ -130,9 +130,9 @@
             // Inner_Body_Panel
             // 
             this.Inner_Body_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Inner_Body_Panel.Location = new System.Drawing.Point(0, 108);
+            this.Inner_Body_Panel.Location = new System.Drawing.Point(0, 57);
             this.Inner_Body_Panel.Name = "Inner_Body_Panel";
-            this.Inner_Body_Panel.Size = new System.Drawing.Size(1093, 936);
+            this.Inner_Body_Panel.Size = new System.Drawing.Size(1093, 987);
             this.Inner_Body_Panel.TabIndex = 19;
             // 
             // Header_Panel
@@ -146,7 +146,7 @@
             this.Header_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header_Panel.Location = new System.Drawing.Point(0, 0);
             this.Header_Panel.Name = "Header_Panel";
-            this.Header_Panel.Size = new System.Drawing.Size(1093, 108);
+            this.Header_Panel.Size = new System.Drawing.Size(1093, 57);
             this.Header_Panel.TabIndex = 18;
             // 
             // Back_Button
@@ -162,7 +162,7 @@
             this.Back_Button.Location = new System.Drawing.Point(0, 0);
             this.Back_Button.Name = "Back_Button";
             this.Back_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Back_Button.Size = new System.Drawing.Size(97, 108);
+            this.Back_Button.Size = new System.Drawing.Size(97, 57);
             this.Back_Button.TabIndex = 17;
             this.Back_Button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Back_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -174,7 +174,7 @@
             this.Date_Label.AutoSize = true;
             this.Date_Label.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date_Label.ForeColor = System.Drawing.Color.White;
-            this.Date_Label.Location = new System.Drawing.Point(656, 40);
+            this.Date_Label.Location = new System.Drawing.Point(668, 9);
             this.Date_Label.Name = "Date_Label";
             this.Date_Label.Size = new System.Drawing.Size(113, 42);
             this.Date_Label.TabIndex = 16;
@@ -185,7 +185,7 @@
             this.JRM_Version_Label.AutoSize = true;
             this.JRM_Version_Label.Font = new System.Drawing.Font("Verdana", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JRM_Version_Label.ForeColor = System.Drawing.Color.White;
-            this.JRM_Version_Label.Location = new System.Drawing.Point(117, 37);
+            this.JRM_Version_Label.Location = new System.Drawing.Point(129, 6);
             this.JRM_Version_Label.Name = "JRM_Version_Label";
             this.JRM_Version_Label.Size = new System.Drawing.Size(168, 45);
             this.JRM_Version_Label.TabIndex = 13;
@@ -196,7 +196,7 @@
             this.Time_Label.AutoSize = true;
             this.Time_Label.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Time_Label.ForeColor = System.Drawing.Color.White;
-            this.Time_Label.Location = new System.Drawing.Point(918, 40);
+            this.Time_Label.Location = new System.Drawing.Point(930, 9);
             this.Time_Label.Name = "Time_Label";
             this.Time_Label.Size = new System.Drawing.Size(107, 42);
             this.Time_Label.TabIndex = 15;
@@ -207,7 +207,7 @@
             this.User_Label.AutoSize = true;
             this.User_Label.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User_Label.ForeColor = System.Drawing.Color.White;
-            this.User_Label.Location = new System.Drawing.Point(421, 40);
+            this.User_Label.Location = new System.Drawing.Point(433, 9);
             this.User_Label.Name = "User_Label";
             this.User_Label.Size = new System.Drawing.Size(124, 42);
             this.User_Label.TabIndex = 14;
