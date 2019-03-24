@@ -51,7 +51,7 @@ namespace borderless_windowless
             Main_Control mc = new Main_Control();
             mc.Dock = DockStyle.Fill;
             Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(mc);
-            Main_Form.Instance.Inner_Body_Panel_Container.Controls["Home_Control"].BringToFront();
+            //Main_Form.Instance.Inner_Body_Panel_Container.Controls["Home_Control"].BringToFront();
             
 
         }
