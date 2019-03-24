@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JRM2.0", "borderless_windowless\JRM2.0.csproj", "{C8EE6A7F-6074-4FB1-ACE0-8083E58B9B2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JRM1.0", "borderless_windowless\JRM1.0.csproj", "{C8EE6A7F-6074-4FB1-ACE0-8083E58B9B2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

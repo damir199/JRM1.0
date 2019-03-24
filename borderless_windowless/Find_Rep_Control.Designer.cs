@@ -31,7 +31,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Search_Label = new System.Windows.Forms.Label();
             this.Search_Repair_Button = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Repair_Result_TB = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -66,26 +66,26 @@
             this.Search_Repair_Button.Text = "Search";
             this.Search_Repair_Button.UseVisualStyleBackColor = false;
             // 
-            // listBox1
+            // Repair_Result_TB
             // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 37;
-            this.listBox1.Items.AddRange(new object[] {
+            this.Repair_Result_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repair_Result_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Repair_Result_TB.ItemHeight = 37;
+            this.Repair_Result_TB.Items.AddRange(new object[] {
             "R-0125-8654-9584",
             "R-2548-9658-6899",
             "R-2548-9652-6154"});
-            this.listBox1.Location = new System.Drawing.Point(197, 443);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(805, 372);
-            this.listBox1.TabIndex = 10;
+            this.Repair_Result_TB.Location = new System.Drawing.Point(197, 443);
+            this.Repair_Result_TB.Name = "Repair_Result_TB";
+            this.Repair_Result_TB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Repair_Result_TB.Size = new System.Drawing.Size(805, 372);
+            this.Repair_Result_TB.TabIndex = 10;
             // 
             // Find_Rep_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.Repair_Result_TB);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Search_Label);
             this.Controls.Add(this.Search_Repair_Button);
@@ -101,6 +101,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Search_Label;
         private System.Windows.Forms.Button Search_Repair_Button;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox Repair_Result_TB;
     }
 }

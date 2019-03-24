@@ -17,11 +17,15 @@ namespace borderless_windowless
             InitializeComponent();
         }
 
-        private void Cancel_Button_Click(object sender, EventArgs e)
-        {
-           
-            
 
+        private void Login_Button_Click(object sender, EventArgs e)
+        {
+            string user = Username_TB.Text.ToString();
+            string pass = Password_TB.Text.ToString();
+            if (Functional_Classes.Employee_Login_Val.Employee_Login_Auth(user, pass) == true)
+            {
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls["Main_Control"].BringToFront();
+            }
         }
     }
 }

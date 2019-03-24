@@ -35,12 +35,13 @@
             this.Settings_Button = new System.Windows.Forms.Button();
             this.Shutdown_Button = new System.Windows.Forms.Button();
             this.Body_Panel = new System.Windows.Forms.Panel();
+            this.Inner_Body_Panel = new System.Windows.Forms.Panel();
             this.Header_Panel = new System.Windows.Forms.Panel();
             this.Back_Button = new System.Windows.Forms.Button();
             this.Date_Label = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.JRM_Version_Label = new System.Windows.Forms.Label();
             this.Time_Label = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.User_Label = new System.Windows.Forms.Label();
             this.SideBar_Panel.SuspendLayout();
             this.Body_Panel.SuspendLayout();
             this.Header_Panel.SuspendLayout();
@@ -118,6 +119,7 @@
             // 
             // Body_Panel
             // 
+            this.Body_Panel.Controls.Add(this.Inner_Body_Panel);
             this.Body_Panel.Controls.Add(this.Header_Panel);
             this.Body_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Body_Panel.Location = new System.Drawing.Point(0, 0);
@@ -125,14 +127,22 @@
             this.Body_Panel.Size = new System.Drawing.Size(1093, 1044);
             this.Body_Panel.TabIndex = 11;
             // 
+            // Inner_Body_Panel
+            // 
+            this.Inner_Body_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Inner_Body_Panel.Location = new System.Drawing.Point(0, 108);
+            this.Inner_Body_Panel.Name = "Inner_Body_Panel";
+            this.Inner_Body_Panel.Size = new System.Drawing.Size(1093, 936);
+            this.Inner_Body_Panel.TabIndex = 19;
+            // 
             // Header_Panel
             // 
             this.Header_Panel.BackColor = System.Drawing.Color.Teal;
             this.Header_Panel.Controls.Add(this.Back_Button);
             this.Header_Panel.Controls.Add(this.Date_Label);
-            this.Header_Panel.Controls.Add(this.label1);
+            this.Header_Panel.Controls.Add(this.JRM_Version_Label);
             this.Header_Panel.Controls.Add(this.Time_Label);
-            this.Header_Panel.Controls.Add(this.label2);
+            this.Header_Panel.Controls.Add(this.User_Label);
             this.Header_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header_Panel.Location = new System.Drawing.Point(0, 0);
             this.Header_Panel.Name = "Header_Panel";
@@ -164,46 +174,46 @@
             this.Date_Label.AutoSize = true;
             this.Date_Label.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date_Label.ForeColor = System.Drawing.Color.White;
-            this.Date_Label.Location = new System.Drawing.Point(893, 37);
+            this.Date_Label.Location = new System.Drawing.Point(656, 40);
             this.Date_Label.Name = "Date_Label";
             this.Date_Label.Size = new System.Drawing.Size(113, 42);
             this.Date_Label.TabIndex = 16;
             this.Date_Label.Text = "DATE";
             // 
-            // label1
+            // JRM_Version_Label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(297, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 45);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "JRM 1.0";
+            this.JRM_Version_Label.AutoSize = true;
+            this.JRM_Version_Label.Font = new System.Drawing.Font("Verdana", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JRM_Version_Label.ForeColor = System.Drawing.Color.White;
+            this.JRM_Version_Label.Location = new System.Drawing.Point(117, 37);
+            this.JRM_Version_Label.Name = "JRM_Version_Label";
+            this.JRM_Version_Label.Size = new System.Drawing.Size(168, 45);
+            this.JRM_Version_Label.TabIndex = 13;
+            this.JRM_Version_Label.Text = "JRM 1.0";
             // 
             // Time_Label
             // 
             this.Time_Label.AutoSize = true;
             this.Time_Label.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Time_Label.ForeColor = System.Drawing.Color.White;
-            this.Time_Label.Location = new System.Drawing.Point(704, 37);
+            this.Time_Label.Location = new System.Drawing.Point(918, 40);
             this.Time_Label.Name = "Time_Label";
             this.Time_Label.Size = new System.Drawing.Size(107, 42);
             this.Time_Label.TabIndex = 15;
             this.Time_Label.Text = "TIME";
             // 
-            // label2
+            // User_Label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(546, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 42);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Damir";
+            this.User_Label.AutoSize = true;
+            this.User_Label.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User_Label.ForeColor = System.Drawing.Color.White;
+            this.User_Label.Location = new System.Drawing.Point(421, 40);
+            this.User_Label.Name = "User_Label";
+            this.User_Label.Size = new System.Drawing.Size(124, 42);
+            this.User_Label.TabIndex = 14;
+            this.User_Label.Text = "Damir";
             // 
-            // Form1
+            // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -212,7 +222,7 @@
             this.Controls.Add(this.Body_Panel);
             this.Controls.Add(this.SideBar_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Main_Form";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -232,12 +242,13 @@
         private System.Windows.Forms.Button Report_Button;
         private System.Windows.Forms.Button Settings_Button;
         private System.Windows.Forms.Panel Body_Panel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label JRM_Version_Label;
         private System.Windows.Forms.Panel Header_Panel;
         private System.Windows.Forms.Label Date_Label;
         private System.Windows.Forms.Label Time_Label;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label User_Label;
         private System.Windows.Forms.Button Back_Button;
+        private System.Windows.Forms.Panel Inner_Body_Panel;
     }
 }
 

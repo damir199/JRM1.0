@@ -47,7 +47,7 @@
             this.Find_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Find_Repair_Button.ForeColor = System.Drawing.Color.White;
             this.Find_Repair_Button.Image = ((System.Drawing.Image)(resources.GetObject("Find_Repair_Button.Image")));
-            this.Find_Repair_Button.Location = new System.Drawing.Point(205, 426);
+            this.Find_Repair_Button.Location = new System.Drawing.Point(222, 334);
             this.Find_Repair_Button.Name = "Find_Repair_Button";
             this.Find_Repair_Button.Size = new System.Drawing.Size(153, 322);
             this.Find_Repair_Button.TabIndex = 20;
@@ -65,7 +65,7 @@
             this.Create_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Customer_Button.ForeColor = System.Drawing.Color.White;
             this.Create_Customer_Button.Image = ((System.Drawing.Image)(resources.GetObject("Create_Customer_Button.Image")));
-            this.Create_Customer_Button.Location = new System.Drawing.Point(682, 426);
+            this.Create_Customer_Button.Location = new System.Drawing.Point(699, 334);
             this.Create_Customer_Button.Name = "Create_Customer_Button";
             this.Create_Customer_Button.Size = new System.Drawing.Size(153, 322);
             this.Create_Customer_Button.TabIndex = 19;
@@ -83,7 +83,7 @@
             this.Find_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Find_Customer_Button.ForeColor = System.Drawing.Color.White;
             this.Find_Customer_Button.Image = ((System.Drawing.Image)(resources.GetObject("Find_Customer_Button.Image")));
-            this.Find_Customer_Button.Location = new System.Drawing.Point(523, 426);
+            this.Find_Customer_Button.Location = new System.Drawing.Point(540, 334);
             this.Find_Customer_Button.Name = "Find_Customer_Button";
             this.Find_Customer_Button.Size = new System.Drawing.Size(153, 322);
             this.Find_Customer_Button.TabIndex = 18;
@@ -101,7 +101,7 @@
             this.Logout_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout_Button.ForeColor = System.Drawing.Color.White;
             this.Logout_Button.Image = ((System.Drawing.Image)(resources.GetObject("Logout_Button.Image")));
-            this.Logout_Button.Location = new System.Drawing.Point(841, 522);
+            this.Logout_Button.Location = new System.Drawing.Point(858, 430);
             this.Logout_Button.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.Logout_Button.Name = "Logout_Button";
             this.Logout_Button.Size = new System.Drawing.Size(132, 226);
@@ -120,7 +120,7 @@
             this.Create_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Repair_Button.ForeColor = System.Drawing.Color.White;
             this.Create_Repair_Button.Image = ((System.Drawing.Image)(resources.GetObject("Create_Repair_Button.Image")));
-            this.Create_Repair_Button.Location = new System.Drawing.Point(364, 426);
+            this.Create_Repair_Button.Location = new System.Drawing.Point(381, 334);
             this.Create_Repair_Button.Name = "Create_Repair_Button";
             this.Create_Repair_Button.Size = new System.Drawing.Size(153, 322);
             this.Create_Repair_Button.TabIndex = 16;
@@ -138,7 +138,7 @@
             this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_Button.ForeColor = System.Drawing.Color.White;
             this.Login_Button.Image = ((System.Drawing.Image)(resources.GetObject("Login_Button.Image")));
-            this.Login_Button.Location = new System.Drawing.Point(841, 301);
+            this.Login_Button.Location = new System.Drawing.Point(858, 209);
             this.Login_Button.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(132, 217);
@@ -158,7 +158,7 @@
             this.Customers_Button.ForeColor = System.Drawing.Color.White;
             this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
             this.Customers_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Customers_Button.Location = new System.Drawing.Point(523, 301);
+            this.Customers_Button.Location = new System.Drawing.Point(540, 209);
             this.Customers_Button.Name = "Customers_Button";
             this.Customers_Button.Size = new System.Drawing.Size(312, 119);
             this.Customers_Button.TabIndex = 14;
@@ -176,7 +176,7 @@
             this.Repairs_Button.ForeColor = System.Drawing.Color.White;
             this.Repairs_Button.Image = ((System.Drawing.Image)(resources.GetObject("Repairs_Button.Image")));
             this.Repairs_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Repairs_Button.Location = new System.Drawing.Point(205, 301);
+            this.Repairs_Button.Location = new System.Drawing.Point(222, 209);
             this.Repairs_Button.Name = "Repairs_Button";
             this.Repairs_Button.Size = new System.Drawing.Size(312, 119);
             this.Repairs_Button.TabIndex = 13;

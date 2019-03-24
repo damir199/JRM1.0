@@ -27,10 +27,10 @@ namespace borderless_windowless
 
 
         }
-        public Panel Body_Panel_Container
+        public Panel Inner_Body_Panel_Container
         {
-            get { return Body_Panel;}
-            set { Body_Panel = value; }
+            get { return Inner_Body_Panel;}
+            set { Inner_Body_Panel = value; }
 
         }
         public Main_Form()
@@ -46,19 +46,19 @@ namespace borderless_windowless
         {
 
             Date_Label.Text = DateTime.Today.ToString("dd/MM/yyyy");
-            Time_Label.Text = DateTime.Now.ToString("hh:mmtt");
+            Time_Label.Text = DateTime.Now.ToString("h:mmtt");
             _obj = this;
             Main_Control mc = new Main_Control();
             mc.Dock = DockStyle.Fill;
-            Body_Panel_Container.Controls.Add(mc);
-            Body_Panel_Container.Controls["Home_Control"].BringToFront();
+            Inner_Body_Panel_Container.Controls.Add(mc);
+            Inner_Body_Panel_Container.Controls["Home_Control"].BringToFront();
             
 
         }
 
         private void Back_Button_Click(object sender, EventArgs e)
         {
-            Body_Panel_Container.Controls["Main_Control"].BringToFront();
+            Inner_Body_Panel_Container.Controls["Main_Control"].BringToFront();
         }
 
         private void Shutdown_Button_Click(object sender, EventArgs e)
