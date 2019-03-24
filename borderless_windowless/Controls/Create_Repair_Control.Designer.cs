@@ -215,7 +215,7 @@
             // 
             this.Deposit_Label.AutoSize = true;
             this.Deposit_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_Label.Location = new System.Drawing.Point(400, 402);
+            this.Deposit_Label.Location = new System.Drawing.Point(400, 580);
             this.Deposit_Label.Name = "Deposit_Label";
             this.Deposit_Label.Size = new System.Drawing.Size(125, 37);
             this.Deposit_Label.TabIndex = 15;
@@ -225,7 +225,7 @@
             // 
             this.Deposit_Amount_Label.AutoSize = true;
             this.Deposit_Amount_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_Amount_Label.Location = new System.Drawing.Point(322, 501);
+            this.Deposit_Amount_Label.Location = new System.Drawing.Point(322, 679);
             this.Deposit_Amount_Label.Name = "Deposit_Amount_Label";
             this.Deposit_Amount_Label.Size = new System.Drawing.Size(107, 31);
             this.Deposit_Amount_Label.TabIndex = 16;
@@ -235,7 +235,7 @@
             // 
             this.Deposit_AV_Label.AutoSize = true;
             this.Deposit_AV_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_AV_Label.Location = new System.Drawing.Point(252, 546);
+            this.Deposit_AV_Label.Location = new System.Drawing.Point(252, 724);
             this.Deposit_AV_Label.Name = "Deposit_AV_Label";
             this.Deposit_AV_Label.Size = new System.Drawing.Size(177, 31);
             this.Deposit_AV_Label.TabIndex = 17;
@@ -245,7 +245,7 @@
             // 
             this.Deposit_Ref_Label.AutoSize = true;
             this.Deposit_Ref_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_Ref_Label.Location = new System.Drawing.Point(289, 458);
+            this.Deposit_Ref_Label.Location = new System.Drawing.Point(289, 636);
             this.Deposit_Ref_Label.Name = "Deposit_Ref_Label";
             this.Deposit_Ref_Label.Size = new System.Drawing.Size(140, 31);
             this.Deposit_Ref_Label.TabIndex = 18;
@@ -255,7 +255,7 @@
             // 
             this.Deposit_Amount_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Deposit_Amount_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_Amount_TB.Location = new System.Drawing.Point(435, 494);
+            this.Deposit_Amount_TB.Location = new System.Drawing.Point(435, 672);
             this.Deposit_Amount_TB.Name = "Deposit_Amount_TB";
             this.Deposit_Amount_TB.Size = new System.Drawing.Size(80, 38);
             this.Deposit_Amount_TB.TabIndex = 19;
@@ -264,7 +264,7 @@
             // 
             this.Deposit_AV_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Deposit_AV_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_AV_TB.Location = new System.Drawing.Point(435, 539);
+            this.Deposit_AV_TB.Location = new System.Drawing.Point(435, 717);
             this.Deposit_AV_TB.Name = "Deposit_AV_TB";
             this.Deposit_AV_TB.Size = new System.Drawing.Size(80, 38);
             this.Deposit_AV_TB.TabIndex = 20;
@@ -273,7 +273,7 @@
             // 
             this.Deposit_Ref_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Deposit_Ref_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deposit_Ref_TB.Location = new System.Drawing.Point(435, 451);
+            this.Deposit_Ref_TB.Location = new System.Drawing.Point(435, 629);
             this.Deposit_Ref_TB.Name = "Deposit_Ref_TB";
             this.Deposit_Ref_TB.Size = new System.Drawing.Size(206, 38);
             this.Deposit_Ref_TB.TabIndex = 21;
