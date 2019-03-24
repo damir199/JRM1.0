@@ -96,6 +96,12 @@
     <Compile Include="View_Repair_Control.Designer.cs">
       <DependentUpon>View_Repair_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_User_Control.Designer.cs">
+      <DependentUpon>View_User_Control.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Create_Repair_Control.resx">
       <DependentUpon>Create_Repair_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +134,9 @@
     </Compile>
     <EmbeddedResource Include="View_Repair_Control.resx">
       <DependentUpon>View_Repair_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_User_Control.resx">
+      <DependentUpon>View_User_Control.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

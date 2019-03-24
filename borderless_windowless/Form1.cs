@@ -39,6 +39,7 @@ namespace borderless_windowless
         }
 
         
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -48,11 +49,15 @@ namespace borderless_windowless
      
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            Date_Label.Text = DateTime.Today.ToString("dd/MM/yyyy");
+            Time_Label.Text = DateTime.Now.ToString("hh:mmtt");
             _obj = this;
             Main_Control mc = new Main_Control();
             mc.Dock = DockStyle.Fill;
             Body_Panel_Container.Controls.Add(mc);
             Body_Panel_Container.Controls["Home_Control"].BringToFront();
+            
 
         }
     }

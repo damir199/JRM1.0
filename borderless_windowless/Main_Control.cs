@@ -53,7 +53,7 @@ namespace borderless_windowless
                 Form1.Instance.Body_Panel_Container.Controls.Add(FUC);
 
             }
-            Form1.Instance.Body_Panel_Container.Controls["Find_User_Control"].BringToFront();
+            Form1.Instance.Body_Panel_Container.Controls["Find_Customer_Control"].BringToFront();
         }
 
         private void Create_Repair_Button_Click(object sender, EventArgs e)
@@ -85,15 +85,27 @@ namespace borderless_windowless
 
         private void Logout_Button_Click(object sender, EventArgs e)
         {
+            /* if (!Form1.Instance.Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+            * {
+            *
+            *     View_Repair_Control VR = new View_Repair_Control();
+            *     VR.Dock = DockStyle.Fill;
+           *      Form1.Instance.Body_Panel_Container.Controls.Add(VR);
+           *
+            * }
+            * Form1.Instance.Body_Panel_Container.Controls["View_Repair_Control"].BringToFront();
+            * */
+
             if (!Form1.Instance.Body_Panel_Container.Controls.ContainsKey("Home_Control"))
-            {
-
-                View_Repair_Control VR = new View_Repair_Control();
-                VR.Dock = DockStyle.Fill;
-                Form1.Instance.Body_Panel_Container.Controls.Add(VR);
-
-            }
-            Form1.Instance.Body_Panel_Container.Controls["View_Repair_Control"].BringToFront();
+                {
+                
+                View_User_Control VU = new View_User_Control();
+                VU.Dock = DockStyle.Fill;
+                Form1.Instance.Body_Panel_Container.Controls.Add(VU);
+                
+                 }
+            Form1.Instance.Body_Panel_Container.Controls["View_User_Control"].BringToFront();
+            
         }
     }
 }
