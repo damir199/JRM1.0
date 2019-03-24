@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Control));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Panel_Controller_Inner = new System.Windows.Forms.Panel();
             this.Find_Repair_Button = new System.Windows.Forms.Button();
             this.Create_Customer_Button = new System.Windows.Forms.Button();
             this.Logout_Button = new System.Windows.Forms.Button();
@@ -40,7 +40,7 @@
             this.Repairs_Button = new System.Windows.Forms.Button();
             this.Customers_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.Panel_Controller_Inner.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -49,7 +49,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Panel_Controller_Inner, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -60,21 +60,21 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1150, 1000);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
-            // panel1
+            // Panel_Controller_Inner
             // 
-            this.panel1.Controls.Add(this.Find_Repair_Button);
-            this.panel1.Controls.Add(this.Create_Customer_Button);
-            this.panel1.Controls.Add(this.Logout_Button);
-            this.panel1.Controls.Add(this.Find_Customer_Button);
-            this.panel1.Controls.Add(this.Login_Button);
-            this.panel1.Controls.Add(this.Create_Repair_Button);
-            this.panel1.Controls.Add(this.Repairs_Button);
-            this.panel1.Controls.Add(this.Customers_Button);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(60, 53);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1029, 894);
-            this.panel1.TabIndex = 0;
+            this.Panel_Controller_Inner.Controls.Add(this.Find_Repair_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Create_Customer_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Logout_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Find_Customer_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Login_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Create_Repair_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Repairs_Button);
+            this.Panel_Controller_Inner.Controls.Add(this.Customers_Button);
+            this.Panel_Controller_Inner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_Controller_Inner.Location = new System.Drawing.Point(60, 53);
+            this.Panel_Controller_Inner.Name = "Panel_Controller_Inner";
+            this.Panel_Controller_Inner.Size = new System.Drawing.Size(1029, 894);
+            this.Panel_Controller_Inner.TabIndex = 0;
             // 
             // Find_Repair_Button
             // 
@@ -92,6 +92,7 @@
             this.Find_Repair_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Find_Repair_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Find_Repair_Button.UseVisualStyleBackColor = false;
+            this.Find_Repair_Button.Click += new System.EventHandler(this.Find_Repair_Button_Click);
             // 
             // Create_Customer_Button
             // 
@@ -109,6 +110,7 @@
             this.Create_Customer_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Create_Customer_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Create_Customer_Button.UseVisualStyleBackColor = false;
+            this.Create_Customer_Button.Click += new System.EventHandler(this.Create_Customer_Button_Click);
             // 
             // Logout_Button
             // 
@@ -127,6 +129,7 @@
             this.Logout_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Logout_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Logout_Button.UseVisualStyleBackColor = false;
+            this.Logout_Button.Click += new System.EventHandler(this.Logout_Button_Click);
             // 
             // Find_Customer_Button
             // 
@@ -144,6 +147,7 @@
             this.Find_Customer_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Find_Customer_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Find_Customer_Button.UseVisualStyleBackColor = false;
+            this.Find_Customer_Button.Click += new System.EventHandler(this.Find_Customer_Button_Click);
             // 
             // Login_Button
             // 
@@ -162,6 +166,7 @@
             this.Login_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Login_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Login_Button.UseVisualStyleBackColor = false;
+            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // Create_Repair_Button
             // 
@@ -179,6 +184,7 @@
             this.Create_Repair_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Create_Repair_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Create_Repair_Button.UseVisualStyleBackColor = false;
+            this.Create_Repair_Button.Click += new System.EventHandler(this.Create_Repair_Button_Click);
             // 
             // Repairs_Button
             // 
@@ -196,6 +202,7 @@
             this.Repairs_Button.Text = "Repairs";
             this.Repairs_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Repairs_Button.UseVisualStyleBackColor = false;
+            this.Repairs_Button.Click += new System.EventHandler(this.Repairs_Button_Click);
             // 
             // Customers_Button
             // 
@@ -214,6 +221,7 @@
             this.Customers_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Customers_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Customers_Button.UseVisualStyleBackColor = false;
+            this.Customers_Button.Click += new System.EventHandler(this.Customers_Button_Click);
             // 
             // Main_Control
             // 
@@ -224,7 +232,7 @@
             this.Name = "Main_Control";
             this.Size = new System.Drawing.Size(1150, 1000);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.Panel_Controller_Inner.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -232,7 +240,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Panel_Controller_Inner;
         private System.Windows.Forms.Button Find_Repair_Button;
         private System.Windows.Forms.Button Create_Customer_Button;
         private System.Windows.Forms.Button Logout_Button;
