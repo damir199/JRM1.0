@@ -17,6 +17,6 @@ namespace borderless_windowless
             InitializeComponent();
         }
 
-      
+
     }
 }
