@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Create_Outworker_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Create_Outworker_Control.Designer.cs">
+      <DependentUpon>Create_Outworker_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Create_Repair_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,10 +94,10 @@
     <Compile Include="Controls\CR_Create_Customer.Designer.cs">
       <DependentUpon>CR_Create_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="CR_Find_Customer.cs">
+    <Compile Include="Controls\CR_Find_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CR_Find_Customer.Designer.cs">
+    <Compile Include="Controls\CR_Find_Customer.Designer.cs">
       <DependentUpon>CR_Find_Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomGroup.cs">
@@ -147,6 +153,9 @@
     <Compile Include="Controls\View_Customer_Control.Designer.cs">
       <DependentUpon>View_Customer_Control.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\Create_Outworker_Control.resx">
+      <DependentUpon>Create_Outworker_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Create_Repair_Control.resx">
       <DependentUpon>Create_Repair_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,7 +171,7 @@
     <EmbeddedResource Include="Controls\Find_Customer_Control.resx">
       <DependentUpon>Find_Customer_Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CR_Find_Customer.resx">
+    <EmbeddedResource Include="Controls\CR_Find_Customer.resx">
       <DependentUpon>CR_Find_Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
