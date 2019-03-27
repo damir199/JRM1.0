@@ -88,6 +88,12 @@
     <Compile Include="Controls\CR_Create_Customer.Designer.cs">
       <DependentUpon>CR_Create_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="CR_Find_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CR_Find_Customer.Designer.cs">
+      <DependentUpon>CR_Find_Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomGroup.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Find_Customer_Control.resx">
       <DependentUpon>Find_Customer_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Find_Customer.resx">
+      <DependentUpon>CR_Find_Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
