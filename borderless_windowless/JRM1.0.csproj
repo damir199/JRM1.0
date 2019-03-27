@@ -147,6 +147,9 @@
     <EmbeddedResource Include="Controls\Create_Customer_Control.resx">
       <DependentUpon>Create_Customer_Control.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CR_Create_Customer.resx">
+      <DependentUpon>CR_Create_Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Find_Rep_Control.resx">
       <DependentUpon>Find_Rep_Control.cs</DependentUpon>
     </EmbeddedResource>
