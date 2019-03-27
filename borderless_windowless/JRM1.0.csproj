@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C8EE6A7F-6074-4FB1-ACE0-8083E58B9B2B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>borderless_windowless</RootNamespace>
-    <AssemblyName>borderless_windowless</AssemblyName>
+    <RootNamespace>Jewellery_Repair_Window_2019</RootNamespace>
+    <AssemblyName>Jewellery_Repair_Window_2019</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DnsClient, Version=1.2.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
@@ -72,11 +76,23 @@
     <Compile Include="Controls\Create_Repair_Control.Designer.cs">
       <DependentUpon>Create_Repair_Control.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Create_User_Control.cs">
+    <Compile Include="Controls\Create_Customer_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\Create_User_Control.Designer.cs">
-      <DependentUpon>Create_User_Control.cs</DependentUpon>
+    <Compile Include="Controls\Create_Customer_Control.Designer.cs">
+      <DependentUpon>Create_Customer_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CR_Create_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CR_Create_Customer.Designer.cs">
+      <DependentUpon>CR_Create_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomGroup.Designer.cs">
+      <DependentUpon>CustomGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="DB_Classes\DB_Details.cs" />
     <Compile Include="Controls\Find_Rep_Control.cs">
@@ -119,17 +135,17 @@
     <Compile Include="Controls\View_Repair_Control.Designer.cs">
       <DependentUpon>View_Repair_Control.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\View_User_Control.cs">
+    <Compile Include="Controls\View_Customer_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\View_User_Control.Designer.cs">
-      <DependentUpon>View_User_Control.cs</DependentUpon>
+    <Compile Include="Controls\View_Customer_Control.Designer.cs">
+      <DependentUpon>View_Customer_Control.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Controls\Create_Repair_Control.resx">
       <DependentUpon>Create_Repair_Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Create_User_Control.resx">
-      <DependentUpon>Create_User_Control.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\Create_Customer_Control.resx">
+      <DependentUpon>Create_Customer_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Find_Rep_Control.resx">
       <DependentUpon>Find_Rep_Control.cs</DependentUpon>
@@ -154,12 +170,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Controls\View_Repair_Control.resx">
       <DependentUpon>View_Repair_Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\View_User_Control.resx">
-      <DependentUpon>View_User_Control.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\View_Customer_Control.resx">
+      <DependentUpon>View_Customer_Control.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

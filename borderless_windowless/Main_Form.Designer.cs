@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
             this.SideBar_Panel = new System.Windows.Forms.Panel();
             this.Info_Button = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.JRM_Version_Label = new System.Windows.Forms.Label();
             this.Time_Label = new System.Windows.Forms.Label();
             this.User_Label = new System.Windows.Forms.Label();
+            this.Time_Timer = new System.Windows.Forms.Timer(this.components);
             this.SideBar_Panel.SuspendLayout();
             this.Body_Panel.SuspendLayout();
             this.Header_Panel.SuspendLayout();
@@ -209,9 +211,9 @@
             this.User_Label.ForeColor = System.Drawing.Color.White;
             this.User_Label.Location = new System.Drawing.Point(433, 9);
             this.User_Label.Name = "User_Label";
-            this.User_Label.Size = new System.Drawing.Size(124, 42);
+            this.User_Label.Size = new System.Drawing.Size(92, 42);
             this.User_Label.TabIndex = 14;
-            this.User_Label.Text = "Damir";
+            this.User_Label.Text = "Nick";
             // 
             // Main_Form
             // 
@@ -249,6 +251,7 @@
         private System.Windows.Forms.Label User_Label;
         private System.Windows.Forms.Button Back_Button;
         private System.Windows.Forms.Panel Inner_Body_Panel;
+        private System.Windows.Forms.Timer Time_Timer;
     }
 }
 
