@@ -1,6 +1,6 @@
-﻿namespace Jewellery_Repair_Window_2019.Controls
+﻿namespace borderless_windowless
 {
-    partial class CR_Create_Customer
+    partial class Create_User_Control
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CR_Create_Customer));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_User_Control));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -41,7 +41,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.confirm_Button = new System.Windows.Forms.Button();
             this.Repairs_Quantity_Label = new System.Windows.Forms.Label();
             this.Repairs_Total_TB = new System.Windows.Forms.TextBox();
             this.Repairs_Ongoing_Label = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1150, 1000);
-            this.tableLayoutPanel1.TabIndex = 75;
+            this.tableLayoutPanel1.TabIndex = 74;
             // 
             // panel1
             // 
@@ -112,7 +112,7 @@
             this.groupBox2.Size = new System.Drawing.Size(412, 249);
             this.groupBox2.TabIndex = 74;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Contact Details ";
+            this.groupBox2.Text = "Confirm";
             // 
             // label6
             // 
@@ -207,7 +207,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.confirm_Button);
             this.groupBox3.Controls.Add(this.Repairs_Quantity_Label);
             this.groupBox3.Controls.Add(this.Repairs_Total_TB);
             this.groupBox3.Controls.Add(this.Repairs_Ongoing_Label);
@@ -221,19 +221,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Repair Details";
             // 
-            // button2
+            // confirm_Button
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(6, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 92);
-            this.button2.TabIndex = 64;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.confirm_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
+            this.confirm_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.confirm_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confirm_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.confirm_Button.Location = new System.Drawing.Point(6, 149);
+            this.confirm_Button.Name = "confirm_Button";
+            this.confirm_Button.Size = new System.Drawing.Size(215, 92);
+            this.confirm_Button.TabIndex = 64;
+            this.confirm_Button.Text = "Save";
+            this.confirm_Button.UseVisualStyleBackColor = false;
+            this.confirm_Button.Click += new System.EventHandler(this.confirm_Button_Click);
             // 
             // Repairs_Quantity_Label
             // 
@@ -439,12 +440,12 @@
             this.Customer_PB.TabIndex = 72;
             this.Customer_PB.TabStop = false;
             // 
-            // CR_Create_Customer
+            // Create_User_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "CR_Create_Customer";
+            this.Name = "Create_User_Control";
             this.Size = new System.Drawing.Size(1150, 1000);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -473,7 +474,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button confirm_Button;
         private System.Windows.Forms.Label Repairs_Quantity_Label;
         private System.Windows.Forms.TextBox Repairs_Total_TB;
         private System.Windows.Forms.Label Repairs_Ongoing_Label;

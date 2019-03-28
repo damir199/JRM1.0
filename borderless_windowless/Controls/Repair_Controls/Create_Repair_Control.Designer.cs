@@ -52,11 +52,13 @@
             this.Condition_CB = new System.Windows.Forms.ComboBox();
             this.Control_GL = new System.Windows.Forms.TableLayoutPanel();
             this.Inner_Body_Panel = new System.Windows.Forms.Panel();
+            this.Cancel_Repair_Button = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.CR_New_Customer = new System.Windows.Forms.Button();
+            this.Find_Customer_Button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -70,23 +72,21 @@
             this.Repairs_Total_TB = new System.Windows.Forms.TextBox();
             this.Repairs_Quantity_Label = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Outworker_Name_TB = new System.Windows.Forms.TextBox();
+            this.Clear_Outworker_Button = new System.Windows.Forms.Button();
+            this.CR_Add_Outworker = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Outworker_Address_TB = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Outworker_Company_TB = new System.Windows.Forms.TextBox();
             this.Control_GL.SuspendLayout();
             this.Inner_Body_Panel.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Add_Repair_Button
@@ -101,6 +101,7 @@
             this.Add_Repair_Button.TabIndex = 0;
             this.Add_Repair_Button.Text = "Add Repair";
             this.Add_Repair_Button.UseVisualStyleBackColor = false;
+            this.Add_Repair_Button.Click += new System.EventHandler(this.Add_Repair_Button_Click);
             // 
             // Category_Label
             // 
@@ -354,7 +355,7 @@
             // 
             // Inner_Body_Panel
             // 
-            this.Inner_Body_Panel.Controls.Add(this.button5);
+            this.Inner_Body_Panel.Controls.Add(this.Cancel_Repair_Button);
             this.Inner_Body_Panel.Controls.Add(this.groupBox5);
             this.Inner_Body_Panel.Controls.Add(this.groupBox4);
             this.Inner_Body_Panel.Controls.Add(this.groupBox3);
@@ -368,6 +369,38 @@
             this.Inner_Body_Panel.Name = "Inner_Body_Panel";
             this.Inner_Body_Panel.Size = new System.Drawing.Size(1029, 894);
             this.Inner_Body_Panel.TabIndex = 0;
+            // 
+            // Cancel_Repair_Button
+            // 
+            this.Cancel_Repair_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Cancel_Repair_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel_Repair_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Cancel_Repair_Button.Location = new System.Drawing.Point(309, 410);
+            this.Cancel_Repair_Button.Name = "Cancel_Repair_Button";
+            this.Cancel_Repair_Button.Size = new System.Drawing.Size(141, 81);
+            this.Cancel_Repair_Button.TabIndex = 86;
+            this.Cancel_Repair_Button.Text = "Cancel Repair";
+            this.Cancel_Repair_Button.UseVisualStyleBackColor = false;
+            this.Cancel_Repair_Button.Click += new System.EventHandler(this.Cancel_Repair_Button_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.Work_Required_TB);
+            this.groupBox5.Controls.Add(this.ITem_Notes_Label);
+            this.groupBox5.Controls.Add(this.Item_Notes_TB);
+            this.groupBox5.Controls.Add(this.Condition_CB);
+            this.groupBox5.Controls.Add(this.Work_Needed_Label);
+            this.groupBox5.Controls.Add(this.Item_Condition_Label);
+            this.groupBox5.Controls.Add(this.Categories_CB);
+            this.groupBox5.Controls.Add(this.Category_Label);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(13, 3);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(451, 264);
+            this.groupBox5.TabIndex = 85;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Repair Details";
             // 
             // groupBox4
             // 
@@ -403,8 +436,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.CR_New_Customer);
+            this.groupBox2.Controls.Add(this.Find_Customer_Button);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.textBox3);
@@ -425,31 +458,33 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer Details";
             // 
-            // button1
+            // CR_New_Customer
             // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(296, 146);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 76);
-            this.button1.TabIndex = 70;
-            this.button1.Text = "New Customer";
-            this.button1.UseVisualStyleBackColor = false;
+            this.CR_New_Customer.BackColor = System.Drawing.Color.SkyBlue;
+            this.CR_New_Customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CR_New_Customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CR_New_Customer.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.CR_New_Customer.Location = new System.Drawing.Point(296, 146);
+            this.CR_New_Customer.Name = "CR_New_Customer";
+            this.CR_New_Customer.Size = new System.Drawing.Size(116, 76);
+            this.CR_New_Customer.TabIndex = 70;
+            this.CR_New_Customer.Text = "New Customer";
+            this.CR_New_Customer.UseVisualStyleBackColor = false;
+            this.CR_New_Customer.Click += new System.EventHandler(this.CR_New_Customer_Click);
             // 
-            // button2
+            // Find_Customer_Button
             // 
-            this.button2.BackColor = System.Drawing.Color.SkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(418, 146);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 76);
-            this.button2.TabIndex = 71;
-            this.button2.Text = "Find Customer";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Find_Customer_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Find_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Find_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Find_Customer_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Find_Customer_Button.Location = new System.Drawing.Point(418, 146);
+            this.Find_Customer_Button.Name = "Find_Customer_Button";
+            this.Find_Customer_Button.Size = new System.Drawing.Size(116, 76);
+            this.Find_Customer_Button.TabIndex = 71;
+            this.Find_Customer_Button.Text = "Find Customer";
+            this.Find_Customer_Button.UseVisualStyleBackColor = false;
+            this.Find_Customer_Button.Click += new System.EventHandler(this.Find_Customer_Button_Click);
             // 
             // label3
             // 
@@ -574,14 +609,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.Outworker_Name_TB);
+            this.groupBox1.Controls.Add(this.Clear_Outworker_Button);
+            this.groupBox1.Controls.Add(this.CR_Add_Outworker);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.Outworker_Address_TB);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.Outworker_Company_TB);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(470, 249);
             this.groupBox1.Name = "groupBox1";
@@ -590,40 +625,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Outworker Details";
             // 
-            // textBox6
+            // Outworker_Name_TB
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(113, 30);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(223, 26);
-            this.textBox6.TabIndex = 75;
+            this.Outworker_Name_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Name_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Name_TB.Location = new System.Drawing.Point(113, 30);
+            this.Outworker_Name_TB.Name = "Outworker_Name_TB";
+            this.Outworker_Name_TB.Size = new System.Drawing.Size(223, 26);
+            this.Outworker_Name_TB.TabIndex = 75;
             // 
-            // button4
+            // Clear_Outworker_Button
             // 
-            this.button4.BackColor = System.Drawing.Color.SkyBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(359, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 81);
-            this.button4.TabIndex = 80;
-            this.button4.Text = "Clear Outworker";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Clear_Outworker_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Clear_Outworker_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Clear_Outworker_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear_Outworker_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Clear_Outworker_Button.Location = new System.Drawing.Point(359, 127);
+            this.Clear_Outworker_Button.Name = "Clear_Outworker_Button";
+            this.Clear_Outworker_Button.Size = new System.Drawing.Size(141, 81);
+            this.Clear_Outworker_Button.TabIndex = 80;
+            this.Clear_Outworker_Button.Text = "Clear Outworker";
+            this.Clear_Outworker_Button.UseVisualStyleBackColor = false;
+            this.Clear_Outworker_Button.Click += new System.EventHandler(this.Clear_Outworker_Button_Click);
             // 
-            // button3
+            // CR_Add_Outworker
             // 
-            this.button3.BackColor = System.Drawing.Color.SkyBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(359, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 81);
-            this.button3.TabIndex = 72;
-            this.button3.Text = "Add Outworker";
-            this.button3.UseVisualStyleBackColor = false;
+            this.CR_Add_Outworker.BackColor = System.Drawing.Color.SkyBlue;
+            this.CR_Add_Outworker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CR_Add_Outworker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CR_Add_Outworker.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.CR_Add_Outworker.Location = new System.Drawing.Point(359, 40);
+            this.CR_Add_Outworker.Name = "CR_Add_Outworker";
+            this.CR_Add_Outworker.Size = new System.Drawing.Size(141, 81);
+            this.CR_Add_Outworker.TabIndex = 72;
+            this.CR_Add_Outworker.Text = "Add Outworker";
+            this.CR_Add_Outworker.UseVisualStyleBackColor = false;
+            this.CR_Add_Outworker.Click += new System.EventHandler(this.CR_Add_Outworker_Click);
             // 
             // label7
             // 
@@ -635,15 +672,15 @@
             this.label7.TabIndex = 73;
             this.label7.Text = "Name";
             // 
-            // textBox4
+            // Outworker_Address_TB
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(113, 107);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(223, 101);
-            this.textBox4.TabIndex = 78;
+            this.Outworker_Address_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Address_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Address_TB.Location = new System.Drawing.Point(113, 107);
+            this.Outworker_Address_TB.Multiline = true;
+            this.Outworker_Address_TB.Name = "Outworker_Address_TB";
+            this.Outworker_Address_TB.Size = new System.Drawing.Size(223, 101);
+            this.Outworker_Address_TB.TabIndex = 78;
             // 
             // label6
             // 
@@ -665,45 +702,14 @@
             this.label5.TabIndex = 77;
             this.label5.Text = "Address";
             // 
-            // textBox5
+            // Outworker_Company_TB
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(113, 65);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(223, 26);
-            this.textBox5.TabIndex = 76;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.Work_Required_TB);
-            this.groupBox5.Controls.Add(this.ITem_Notes_Label);
-            this.groupBox5.Controls.Add(this.Item_Notes_TB);
-            this.groupBox5.Controls.Add(this.Condition_CB);
-            this.groupBox5.Controls.Add(this.Work_Needed_Label);
-            this.groupBox5.Controls.Add(this.Item_Condition_Label);
-            this.groupBox5.Controls.Add(this.Categories_CB);
-            this.groupBox5.Controls.Add(this.Category_Label);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(13, 3);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(451, 264);
-            this.groupBox5.TabIndex = 85;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Repair Details";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.SkyBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(309, 410);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(141, 81);
-            this.button5.TabIndex = 86;
-            this.button5.Text = "Cancel Repair";
-            this.button5.UseVisualStyleBackColor = false;
+            this.Outworker_Company_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Company_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Company_TB.Location = new System.Drawing.Point(113, 65);
+            this.Outworker_Company_TB.Name = "Outworker_Company_TB";
+            this.Outworker_Company_TB.Size = new System.Drawing.Size(223, 26);
+            this.Outworker_Company_TB.TabIndex = 76;
             // 
             // Create_Repair_Control
             // 
@@ -715,6 +721,8 @@
             this.Size = new System.Drawing.Size(1150, 1000);
             this.Control_GL.ResumeLayout(false);
             this.Inner_Body_Panel.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -723,8 +731,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -770,14 +776,14 @@
         private System.Windows.Forms.Label Repairs_Ongoing_Label;
         private System.Windows.Forms.TextBox Repairs_Total_TB;
         private System.Windows.Forms.Label Repairs_Quantity_Label;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button Find_Customer_Button;
+        private System.Windows.Forms.Button CR_New_Customer;
+        private System.Windows.Forms.Button CR_Add_Outworker;
+        private System.Windows.Forms.Button Clear_Outworker_Button;
+        private System.Windows.Forms.TextBox Outworker_Address_TB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Outworker_Company_TB;
+        private System.Windows.Forms.TextBox Outworker_Name_TB;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -785,6 +791,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Cancel_Repair_Button;
     }
 }

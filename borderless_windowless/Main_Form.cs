@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jewellery_Repair_Window_2019.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,8 +49,10 @@ namespace borderless_windowless
             Date_Label.Text = DateTime.Today.ToString("dd/MM/yyyy");
             Time_Label.Text = DateTime.Now.ToString("h:mmtt");
             _obj = this;
-            Main_Control mc = new Main_Control();
-            mc.Dock = DockStyle.Fill;
+            Main_Control mc = new Main_Control
+            {
+                Dock = DockStyle.Fill
+            };
             Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(mc);
             //Main_Form.Instance.Inner_Body_Panel_Container.Controls["Home_Control"].BringToFront();
             
@@ -64,6 +67,22 @@ namespace borderless_windowless
         private void Shutdown_Button_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void Settings_Button_Click(object sender, EventArgs e)
+        {
+            if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+            {
+
+                Settings_Control SC = new Settings_Control
+                {
+                    Dock = DockStyle.Fill
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(SC);
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls["Settings_Control"].BringToFront();
+            }
+            
+
         }
     }
 }

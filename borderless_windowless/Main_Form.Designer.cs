@@ -101,6 +101,7 @@
             this.Settings_Button.Size = new System.Drawing.Size(107, 107);
             this.Settings_Button.TabIndex = 1;
             this.Settings_Button.UseVisualStyleBackColor = true;
+            this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
             // 
             // Shutdown_Button
             // 

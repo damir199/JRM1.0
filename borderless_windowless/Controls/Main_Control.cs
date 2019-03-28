@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Jewellery_Repair_Window_2019.Controls;
 
 namespace borderless_windowless
 {
@@ -31,10 +32,12 @@ namespace borderless_windowless
         {
             if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
             {
-                Login_Control LC = new Login_Control();
-                LC.Dock = DockStyle.Fill;
+                Login_Control LC = new Login_Control
+                {
+                    Dock = DockStyle.Fill
+                };
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(LC);
-
+                
 
             }
             Main_Form.Instance.Inner_Body_Panel_Container.Controls["Login_Control"].BringToFront();
@@ -44,8 +47,10 @@ namespace borderless_windowless
             if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
             {
 
-                Find_Rep_Control FRC = new Find_Rep_Control();
-                FRC.Dock = DockStyle.Fill;
+                Find_Rep_Control FRC = new Find_Rep_Control
+                {
+                    Dock = DockStyle.Fill
+                };
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(FRC);
 
             }
@@ -66,22 +71,37 @@ namespace borderless_windowless
 
             if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
             {
-
-                View_User_Control VU = new View_User_Control();
-                VU.Dock = DockStyle.Fill;
-                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(VU);
+                Logout_Success_Control LC = new Logout_Success_Control()
+                {
+                    Dock = DockStyle.Fill
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(LC);
 
             }
-            Main_Form.Instance.Inner_Body_Panel_Container.Controls["View_User_Control"].BringToFront();
+            Main_Form.Instance.Inner_Body_Panel_Container.Controls["Logout_Control"].BringToFront();
 
+           /* if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+           *{
+
+           *     View_User_Control VU = new View_User_Control
+           *     {
+            *        Dock = DockStyle.Fill
+            *    };
+             *   Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(VU);
+*
+          *  }
+         *   Main_Form.Instance.Inner_Body_Panel_Container.Controls["View_User_Control"].BringToFront();
+*/
         }
         private void Create_Customer_Button_Click(object sender, EventArgs e)
         {
             if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
             {
 
-                Create_User_Control CU = new Create_User_Control();
-                CU.Dock = DockStyle.Fill;
+                Create_User_Control CU = new Create_User_Control
+                {
+                    Dock = DockStyle.Fill
+                };
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CU);
 
             }
@@ -92,8 +112,10 @@ namespace borderless_windowless
             if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
             {
 
-                Find_Customer_Control FUC = new Find_Customer_Control();
-                FUC.Dock = DockStyle.Fill;
+                Find_Customer_Control FUC = new Find_Customer_Control
+                {
+                    Dock = DockStyle.Fill
+                };
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(FUC);
 
             }
@@ -104,8 +126,10 @@ namespace borderless_windowless
             if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
             {
 
-                Create_Repair_Control CR = new Create_Repair_Control();
-                CR.Dock = DockStyle.Fill;
+                Create_Repair_Control CR = new Create_Repair_Control
+                {
+                    Dock = DockStyle.Fill
+                };
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CR);
 
             }

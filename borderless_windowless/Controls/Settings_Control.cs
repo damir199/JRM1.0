@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace borderless_windowless
+namespace Jewellery_Repair_Window_2019.Controls
 {
-    public partial class Create_Repair_Control : UserControl
+    public partial class Settings_Control : UserControl
     {
-        public Create_Repair_Control()
+        public Settings_Control()
         {
             InitializeComponent();
         }
-
-    
     }
 }

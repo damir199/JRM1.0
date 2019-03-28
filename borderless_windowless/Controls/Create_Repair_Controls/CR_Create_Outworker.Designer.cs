@@ -41,7 +41,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Save_Button = new System.Windows.Forms.Button();
             this.Repairs_Quantity_Label = new System.Windows.Forms.Label();
             this.Repairs_Total_TB = new System.Windows.Forms.TextBox();
             this.Repairs_Ongoing_Label = new System.Windows.Forms.Label();
@@ -207,7 +207,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.Save_Button);
             this.groupBox3.Controls.Add(this.Repairs_Quantity_Label);
             this.groupBox3.Controls.Add(this.Repairs_Total_TB);
             this.groupBox3.Controls.Add(this.Repairs_Ongoing_Label);
@@ -221,19 +221,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Repair Details";
             // 
-            // button2
+            // Save_Button
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(6, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 92);
-            this.button2.TabIndex = 64;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Save_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
+            this.Save_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Save_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Save_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Save_Button.Location = new System.Drawing.Point(6, 149);
+            this.Save_Button.Name = "Save_Button";
+            this.Save_Button.Size = new System.Drawing.Size(215, 92);
+            this.Save_Button.TabIndex = 64;
+            this.Save_Button.Text = "Save";
+            this.Save_Button.UseVisualStyleBackColor = false;
+            this.Save_Button.Click += new System.EventHandler(this.Save_Button_Click);
             // 
             // Repairs_Quantity_Label
             // 
@@ -473,7 +474,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Save_Button;
         private System.Windows.Forms.Label Repairs_Quantity_Label;
         private System.Windows.Forms.TextBox Repairs_Total_TB;
         private System.Windows.Forms.Label Repairs_Ongoing_Label;
