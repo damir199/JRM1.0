@@ -215,12 +215,13 @@
             this.Customer_Repair_Details_GB.Controls.Add(this.Repairs_Ongoing_Label);
             this.Customer_Repair_Details_GB.Controls.Add(this.Repairs_Ongoing_TB);
             this.Customer_Repair_Details_GB.Controls.Add(this.textBox1);
+            this.Customer_Repair_Details_GB.Enabled = false;
             this.Customer_Repair_Details_GB.Location = new System.Drawing.Point(224, 289);
             this.Customer_Repair_Details_GB.Name = "Customer_Repair_Details_GB";
             this.Customer_Repair_Details_GB.Size = new System.Drawing.Size(227, 247);
             this.Customer_Repair_Details_GB.TabIndex = 75;
             this.Customer_Repair_Details_GB.TabStop = false;
-            this.Customer_Repair_Details_GB.Text = "Repair Details";
+            this.Customer_Repair_Details_GB.Text = "0";
             // 
             // Confirm_Button
             // 
@@ -250,13 +251,14 @@
             // Repairs_Total_TB
             // 
             this.Repairs_Total_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Total_TB.Enabled = false;
             this.Repairs_Total_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Total_TB.Location = new System.Drawing.Point(108, 35);
             this.Repairs_Total_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Repairs_Total_TB.Name = "Repairs_Total_TB";
             this.Repairs_Total_TB.Size = new System.Drawing.Size(98, 26);
             this.Repairs_Total_TB.TabIndex = 58;
-            this.Repairs_Total_TB.Text = "5";
+            this.Repairs_Total_TB.Text = "0";
             this.Repairs_Total_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Repairs_Ongoing_Label
@@ -273,13 +275,14 @@
             // Repairs_Ongoing_TB
             // 
             this.Repairs_Ongoing_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Ongoing_TB.Enabled = false;
             this.Repairs_Ongoing_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Ongoing_TB.Location = new System.Drawing.Point(108, 71);
             this.Repairs_Ongoing_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Repairs_Ongoing_TB.Name = "Repairs_Ongoing_TB";
             this.Repairs_Ongoing_TB.Size = new System.Drawing.Size(98, 26);
             this.Repairs_Ongoing_TB.TabIndex = 60;
-            this.Repairs_Ongoing_TB.Text = "3";
+            this.Repairs_Ongoing_TB.Text = "0";
             this.Repairs_Ongoing_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
@@ -291,7 +294,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(98, 26);
             this.textBox1.TabIndex = 62;
-            this.textBox1.Text = "2";
+            this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Customer_Details_GB

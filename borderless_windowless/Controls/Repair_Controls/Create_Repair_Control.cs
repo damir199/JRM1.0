@@ -99,6 +99,7 @@ namespace Jewellery_Repair_System
 
         }
 
+        //Clear Outworker From Repair
         private void Clear_Outworker_Button_Click(object sender, EventArgs e)
         {
             Outworker_Address_TB.Clear();

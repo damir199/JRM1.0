@@ -100,6 +100,12 @@
     <Compile Include="Controls\Repair_Controls\Repairs_Control.Designer.cs">
       <DependentUpon>Repairs_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Settings_Controls\New_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Settings_Controls\New_User_Control.Designer.cs">
+      <DependentUpon>New_User_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Success_Controls\Logout_Success_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Settings_Control.resx">
       <DependentUpon>Settings_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Settings_Controls\New_User_Control.resx">
+      <DependentUpon>New_User_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Success_Controls\Logout_Success_Control.resx">
       <DependentUpon>Logout_Success_Control.cs</DependentUpon>

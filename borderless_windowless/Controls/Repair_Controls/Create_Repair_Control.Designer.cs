@@ -515,7 +515,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(66, 29);
             this.textBox3.TabIndex = 69;
-            this.textBox3.Text = "2";
+            this.textBox3.Text = "0";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
@@ -557,7 +557,7 @@
             this.Repairs_Ongoing_TB.Name = "Repairs_Ongoing_TB";
             this.Repairs_Ongoing_TB.Size = new System.Drawing.Size(66, 29);
             this.Repairs_Ongoing_TB.TabIndex = 67;
-            this.Repairs_Ongoing_TB.Text = "3";
+            this.Repairs_Ongoing_TB.Text = "0";
             this.Repairs_Ongoing_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Address_Label
@@ -600,7 +600,7 @@
             this.Repairs_Total_TB.Name = "Repairs_Total_TB";
             this.Repairs_Total_TB.Size = new System.Drawing.Size(66, 29);
             this.Repairs_Total_TB.TabIndex = 65;
-            this.Repairs_Total_TB.Text = "5";
+            this.Repairs_Total_TB.Text = "0";
             this.Repairs_Total_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Repairs_Quantity_Label
