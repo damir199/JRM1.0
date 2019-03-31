@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Information_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Information_Control.Designer.cs">
+      <DependentUpon>Information_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Success_Controls\Logout_Success_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,12 @@
     <Compile Include="Controls\Success_Controls\Repair_Success_Control.Designer.cs">
       <DependentUpon>Repair_Success_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Support_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Support_Control.Designer.cs">
+      <DependentUpon>Support_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomGroup.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -167,7 +179,9 @@
     <Compile Include="Controls\Customer_Controls\Find_Customer_Control.Designer.cs">
       <DependentUpon>Find_Customer_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functional_Classes\Create_Repair.cs" />
     <Compile Include="Functional_Classes\Employee_Login_Val.cs" />
+    <Compile Include="JSON\Create_Repair_JSON.cs" />
     <Compile Include="JSON\Employee_Login.cs" />
     <Compile Include="Main_Form.cs">
       <SubType>Form</SubType>
@@ -201,6 +215,9 @@
     <Compile Include="Controls\Customer_Controls\View_Customer_Control.Designer.cs">
       <DependentUpon>View_Customer_Control.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\Information_Control.resx">
+      <DependentUpon>Information_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Settings_Control.resx">
       <DependentUpon>Settings_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Success_Controls\Repair_Success_Control.resx">
       <DependentUpon>Repair_Success_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Support_Control.resx">
+      <DependentUpon>Support_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>

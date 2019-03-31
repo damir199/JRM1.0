@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Jewellery_Repair_Window_2019.Controls;
+using Jewellery_Repair_Window_2019.Functional_Classes;
 
 
 namespace borderless_windowless
@@ -19,17 +20,27 @@ namespace borderless_windowless
             InitializeComponent();
         }
 
+
+
         private void Add_Repair_Button_Click(object sender, EventArgs e)
         {
-            if (Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Create_Repair_Control"))
-            {
-                Repair_Success_Control RS = new Repair_Success_Control
+            string Category = Categories_CB.SelectedItem.ToString();
+            string Condition = Condition_CB.SelectedItem.ToString();
+            string Work_Required = Work_Required_TB.Text.ToString();
+            string Notes = Item_Notes_TB.Text.ToString();
+
+            if (Create_Repair.Create_Repair_Func(Category, Condition, Work_Required, Notes) == true) {
+                Repair_Success_Control CR_SC = new Repair_Success_Control
                 {
                     Dock = DockStyle.Fill
                 };
-                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(RS);
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CR_SC);
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls["Repair_Success_Control"].BringToFront();
-            }
+
+            }else{
+                MessageBox.Show("There's Been An Error Creating Your Repair.");
+
+            };
             
 
         }

@@ -73,6 +73,7 @@
             this.Info_Button.Size = new System.Drawing.Size(107, 107);
             this.Info_Button.TabIndex = 3;
             this.Info_Button.UseVisualStyleBackColor = true;
+            this.Info_Button.Click += new System.EventHandler(this.Info_Button_Click);
             // 
             // Report_Button
             // 
@@ -87,6 +88,7 @@
             this.Report_Button.Size = new System.Drawing.Size(107, 107);
             this.Report_Button.TabIndex = 2;
             this.Report_Button.UseVisualStyleBackColor = true;
+            this.Report_Button.Click += new System.EventHandler(this.Report_Button_Click);
             // 
             // Settings_Button
             // 
