@@ -8,7 +8,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Jewellery_Repair_Window_2019.JSON
 {
-    class Create_Customer_JSON
+    class Customer_JSON
     {
         [BsonRepresentation(BsonType.ObjectId)]
         public string _id { get; set; }

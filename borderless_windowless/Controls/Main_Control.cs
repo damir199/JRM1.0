@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Jewellery_Repair_Window_2019.Controls;
 
-namespace borderless_windowless
+namespace Jewellery_Repair_System
 {
     public partial class Main_Control : UserControl
     {

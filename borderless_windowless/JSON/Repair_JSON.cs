@@ -8,7 +8,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Jewellery_Repair_Window_2019.JSON
 {
-    class Create_Repair_JSON
+    class Repair_JSON
     {
         //this is needed for deserealization
         [BsonRepresentation(BsonType.ObjectId)]

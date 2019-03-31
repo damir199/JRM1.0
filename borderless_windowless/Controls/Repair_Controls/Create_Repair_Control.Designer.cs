@@ -1,4 +1,4 @@
-﻿namespace borderless_windowless
+﻿namespace Jewellery_Repair_System
 {
     partial class Create_Repair_Control
     {

@@ -1,4 +1,4 @@
-﻿namespace borderless_windowless
+﻿namespace Jewellery_Repair_System
 {
     partial class Main_Control
     {
@@ -39,6 +39,8 @@
             this.Create_Repair_Button = new System.Windows.Forms.Button();
             this.Repairs_Button = new System.Windows.Forms.Button();
             this.Customers_Button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.Panel_Controller_Inner.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +64,8 @@
             // 
             // Panel_Controller_Inner
             // 
+            this.Panel_Controller_Inner.Controls.Add(this.button2);
+            this.Panel_Controller_Inner.Controls.Add(this.button1);
             this.Panel_Controller_Inner.Controls.Add(this.Find_Repair_Button);
             this.Panel_Controller_Inner.Controls.Add(this.Create_Customer_Button);
             this.Panel_Controller_Inner.Controls.Add(this.Logout_Button);
@@ -86,7 +90,7 @@
             this.Find_Repair_Button.Image = ((System.Drawing.Image)(resources.GetObject("Find_Repair_Button.Image")));
             this.Find_Repair_Button.Location = new System.Drawing.Point(150, 214);
             this.Find_Repair_Button.Name = "Find_Repair_Button";
-            this.Find_Repair_Button.Size = new System.Drawing.Size(153, 322);
+            this.Find_Repair_Button.Size = new System.Drawing.Size(153, 210);
             this.Find_Repair_Button.TabIndex = 28;
             this.Find_Repair_Button.Text = "Find Repair";
             this.Find_Repair_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -104,7 +108,7 @@
             this.Create_Customer_Button.Image = ((System.Drawing.Image)(resources.GetObject("Create_Customer_Button.Image")));
             this.Create_Customer_Button.Location = new System.Drawing.Point(627, 214);
             this.Create_Customer_Button.Name = "Create_Customer_Button";
-            this.Create_Customer_Button.Size = new System.Drawing.Size(153, 322);
+            this.Create_Customer_Button.Size = new System.Drawing.Size(153, 210);
             this.Create_Customer_Button.TabIndex = 27;
             this.Create_Customer_Button.Text = "New Customer";
             this.Create_Customer_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -117,7 +121,7 @@
             this.Logout_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Logout_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Logout_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logout_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout_Button.ForeColor = System.Drawing.Color.White;
             this.Logout_Button.Image = ((System.Drawing.Image)(resources.GetObject("Logout_Button.Image")));
             this.Logout_Button.Location = new System.Drawing.Point(788, 310);
@@ -141,7 +145,7 @@
             this.Find_Customer_Button.Image = ((System.Drawing.Image)(resources.GetObject("Find_Customer_Button.Image")));
             this.Find_Customer_Button.Location = new System.Drawing.Point(468, 214);
             this.Find_Customer_Button.Name = "Find_Customer_Button";
-            this.Find_Customer_Button.Size = new System.Drawing.Size(153, 322);
+            this.Find_Customer_Button.Size = new System.Drawing.Size(153, 210);
             this.Find_Customer_Button.TabIndex = 26;
             this.Find_Customer_Button.Text = "Find Customer";
             this.Find_Customer_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -154,7 +158,7 @@
             this.Login_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Login_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_Button.ForeColor = System.Drawing.Color.White;
             this.Login_Button.Image = ((System.Drawing.Image)(resources.GetObject("Login_Button.Image")));
             this.Login_Button.Location = new System.Drawing.Point(788, 89);
@@ -176,9 +180,9 @@
             this.Create_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Repair_Button.ForeColor = System.Drawing.Color.White;
             this.Create_Repair_Button.Image = ((System.Drawing.Image)(resources.GetObject("Create_Repair_Button.Image")));
-            this.Create_Repair_Button.Location = new System.Drawing.Point(309, 214);
+            this.Create_Repair_Button.Location = new System.Drawing.Point(309, 215);
             this.Create_Repair_Button.Name = "Create_Repair_Button";
-            this.Create_Repair_Button.Size = new System.Drawing.Size(153, 322);
+            this.Create_Repair_Button.Size = new System.Drawing.Size(153, 209);
             this.Create_Repair_Button.TabIndex = 24;
             this.Create_Repair_Button.Text = "Create Repair";
             this.Create_Repair_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -191,7 +195,7 @@
             this.Repairs_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Repairs_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Repairs_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Repairs_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Repairs_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Button.ForeColor = System.Drawing.Color.White;
             this.Repairs_Button.Image = ((System.Drawing.Image)(resources.GetObject("Repairs_Button.Image")));
             this.Repairs_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -209,7 +213,7 @@
             this.Customers_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Customers_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Customers_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Customers_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Customers_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Customers_Button.ForeColor = System.Drawing.Color.White;
             this.Customers_Button.Image = ((System.Drawing.Image)(resources.GetObject("Customers_Button.Image")));
             this.Customers_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -222,6 +226,40 @@
             this.Customers_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Customers_Button.UseVisualStyleBackColor = false;
             this.Customers_Button.Click += new System.EventHandler(this.Customers_Button_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(150, 430);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(312, 106);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Create Outworker";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(468, 430);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(312, 106);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Find Outworker";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Main_Control
             // 
@@ -249,5 +287,7 @@
         private System.Windows.Forms.Button Create_Repair_Button;
         private System.Windows.Forms.Button Repairs_Button;
         private System.Windows.Forms.Button Customers_Button;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

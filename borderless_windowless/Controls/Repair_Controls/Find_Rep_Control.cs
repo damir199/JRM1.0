@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace borderless_windowless
+namespace Jewellery_Repair_System
 {
     public partial class Find_Rep_Control : UserControl
     {

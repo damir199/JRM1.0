@@ -11,7 +11,7 @@ using Jewellery_Repair_Window_2019.Controls;
 using Jewellery_Repair_Window_2019.Functional_Classes;
 
 
-namespace borderless_windowless
+namespace Jewellery_Repair_System
 {
     public partial class Create_Repair_Control : UserControl
     {

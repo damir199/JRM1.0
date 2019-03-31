@@ -1,4 +1,4 @@
-﻿namespace borderless_windowless
+﻿namespace Jewellery_Repair_System
 {
     partial class Main_Form
     {
@@ -52,7 +52,7 @@
             // SideBar_Panel
             // 
             this.SideBar_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
-            this.SideBar_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SideBar_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.SideBar_Panel.Controls.Add(this.Info_Button);
             this.SideBar_Panel.Controls.Add(this.Report_Button);
             this.SideBar_Panel.Controls.Add(this.Settings_Button);
@@ -71,9 +71,9 @@
             this.Info_Button.FlatAppearance.BorderSize = 0;
             this.Info_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Info_Button.ForeColor = System.Drawing.Color.White;
-            this.Info_Button.Location = new System.Drawing.Point(0, 721);
+            this.Info_Button.Location = new System.Drawing.Point(0, 719);
             this.Info_Button.Name = "Info_Button";
-            this.Info_Button.Size = new System.Drawing.Size(105, 107);
+            this.Info_Button.Size = new System.Drawing.Size(103, 107);
             this.Info_Button.TabIndex = 3;
             this.Info_Button.UseVisualStyleBackColor = true;
             this.Info_Button.Click += new System.EventHandler(this.Info_Button_Click);
@@ -86,9 +86,9 @@
             this.Report_Button.FlatAppearance.BorderSize = 0;
             this.Report_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Report_Button.ForeColor = System.Drawing.Color.White;
-            this.Report_Button.Location = new System.Drawing.Point(0, 828);
+            this.Report_Button.Location = new System.Drawing.Point(0, 826);
             this.Report_Button.Name = "Report_Button";
-            this.Report_Button.Size = new System.Drawing.Size(105, 107);
+            this.Report_Button.Size = new System.Drawing.Size(103, 107);
             this.Report_Button.TabIndex = 2;
             this.Report_Button.UseVisualStyleBackColor = true;
             this.Report_Button.Click += new System.EventHandler(this.Report_Button_Click);
@@ -101,9 +101,9 @@
             this.Settings_Button.FlatAppearance.BorderSize = 0;
             this.Settings_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_Button.ForeColor = System.Drawing.Color.White;
-            this.Settings_Button.Location = new System.Drawing.Point(0, 935);
+            this.Settings_Button.Location = new System.Drawing.Point(0, 933);
             this.Settings_Button.Name = "Settings_Button";
-            this.Settings_Button.Size = new System.Drawing.Size(105, 107);
+            this.Settings_Button.Size = new System.Drawing.Size(103, 107);
             this.Settings_Button.TabIndex = 1;
             this.Settings_Button.UseVisualStyleBackColor = true;
             this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
@@ -118,7 +118,7 @@
             this.Shutdown_Button.ForeColor = System.Drawing.Color.White;
             this.Shutdown_Button.Location = new System.Drawing.Point(0, 0);
             this.Shutdown_Button.Name = "Shutdown_Button";
-            this.Shutdown_Button.Size = new System.Drawing.Size(105, 107);
+            this.Shutdown_Button.Size = new System.Drawing.Size(103, 107);
             this.Shutdown_Button.TabIndex = 0;
             this.Shutdown_Button.UseVisualStyleBackColor = true;
             this.Shutdown_Button.Click += new System.EventHandler(this.Shutdown_Button_Click);

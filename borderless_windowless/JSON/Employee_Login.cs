@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace borderless_windowless.JSON
+namespace Jewellery_Repair_System.JSON
 {
     class Employee_Login
     {

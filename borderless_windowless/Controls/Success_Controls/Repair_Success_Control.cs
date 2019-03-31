@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Jewellery_Repair_Window_2019.Controls;
-using borderless_windowless;
+using Jewellery_Repair_System;
 
 namespace Jewellery_Repair_Window_2019.Controls
 {

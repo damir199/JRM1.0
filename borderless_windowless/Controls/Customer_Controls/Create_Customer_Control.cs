@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Jewellery_Repair_Window_2019.Controls;
 using Jewellery_Repair_Window_2019.Functional_Classes;
 
-namespace borderless_windowless
+namespace Jewellery_Repair_System
 {
     public partial class Create_User_Control : UserControl
     {
@@ -19,7 +19,7 @@ namespace borderless_windowless
             InitializeComponent();
         }
 
-        private void confirm_Button_Click(object sender, EventArgs e)
+        private void Confirm_Button_Click(object sender, EventArgs e)
         {
             string Fname = First_Name_TB.Text.ToString();
             string Lname = Last_Name_TB.Text.ToString();
@@ -30,7 +30,7 @@ namespace borderless_windowless
             string Mobile = Mobile_TB.Text.ToString();
             string Email = Email_TB.Text.ToString();
             string Contact_Pref = Contact_Pref_CB.Text.ToString();
-            
+
             if (Create_Customer.Create_Customer_Func(Fname, Lname, Addres1, Addres2, Postcode, Phone, Mobile, Email, Contact_Pref) == true)
             {
                 Customer_Success_Control CC = new Customer_Success_Control

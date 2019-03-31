@@ -7,7 +7,7 @@ using MongoDB.Bson;
 using System.Windows.Forms;
 using MongoDB.Driver;
 
-namespace borderless_windowless.Functional_Classes
+namespace Jewellery_Repair_System.Functional_Classes
 {
     class Employee_Login_Val
     {

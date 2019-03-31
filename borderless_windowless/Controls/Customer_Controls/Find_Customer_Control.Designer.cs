@@ -1,4 +1,4 @@
-﻿namespace borderless_windowless
+﻿namespace Jewellery_Repair_System
 {
     partial class Find_Customer_Control
     {
@@ -34,10 +34,11 @@
             this.Repair_Result_TB = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Search_Label = new System.Windows.Forms.Label();
-            this.Search_Repair_Button = new System.Windows.Forms.Button();
+            this.Search_Customer_Button = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.View_Customer_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -100,8 +101,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.View_Customer_Button);
+            this.groupBox1.Controls.Add(this.Search_Customer_Button);
             this.groupBox1.Controls.Add(this.Search_Label);
-            this.groupBox1.Controls.Add(this.Search_Repair_Button);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Location = new System.Drawing.Point(267, 80);
             this.groupBox1.Name = "groupBox1";
@@ -120,18 +122,18 @@
             this.Search_Label.TabIndex = 4;
             this.Search_Label.Text = "Customer ID";
             // 
-            // Search_Repair_Button
+            // Search_Customer_Button
             // 
-            this.Search_Repair_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
-            this.Search_Repair_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search_Repair_Button.ForeColor = System.Drawing.Color.White;
-            this.Search_Repair_Button.Location = new System.Drawing.Point(29, 129);
-            this.Search_Repair_Button.Name = "Search_Repair_Button";
-            this.Search_Repair_Button.Size = new System.Drawing.Size(153, 74);
-            this.Search_Repair_Button.TabIndex = 3;
-            this.Search_Repair_Button.Text = "Search";
-            this.Search_Repair_Button.UseVisualStyleBackColor = false;
+            this.Search_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.Search_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Search_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_Customer_Button.ForeColor = System.Drawing.Color.White;
+            this.Search_Customer_Button.Location = new System.Drawing.Point(12, 129);
+            this.Search_Customer_Button.Name = "Search_Customer_Button";
+            this.Search_Customer_Button.Size = new System.Drawing.Size(95, 74);
+            this.Search_Customer_Button.TabIndex = 3;
+            this.Search_Customer_Button.Text = "Search";
+            this.Search_Customer_Button.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -167,6 +169,19 @@
             this.listBox1.Size = new System.Drawing.Size(250, 142);
             this.listBox1.TabIndex = 10;
             // 
+            // View_Customer_Button
+            // 
+            this.View_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.View_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.View_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.View_Customer_Button.ForeColor = System.Drawing.Color.White;
+            this.View_Customer_Button.Location = new System.Drawing.Point(113, 129);
+            this.View_Customer_Button.Name = "View_Customer_Button";
+            this.View_Customer_Button.Size = new System.Drawing.Size(95, 74);
+            this.View_Customer_Button.TabIndex = 6;
+            this.View_Customer_Button.Text = "View";
+            this.View_Customer_Button.UseVisualStyleBackColor = false;
+            // 
             // Find_Customer_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,9 +207,10 @@
         private System.Windows.Forms.ListBox Repair_Result_TB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label Search_Label;
-        private System.Windows.Forms.Button Search_Repair_Button;
+        private System.Windows.Forms.Button Search_Customer_Button;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button View_Customer_Button;
     }
 }

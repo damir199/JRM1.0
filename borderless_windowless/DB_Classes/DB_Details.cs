@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MongoDB.Driver;
 using MongoDB.Bson;
 
-namespace borderless_windowless.DB_Classes
+namespace Jewellery_Repair_System.DB_Classes
 {
     class DB_Details
     {

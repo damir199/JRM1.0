@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Jewellery_Repair_System
+namespace Jewellery_Repair_Window_2019.Controls.Create_Repair_Controls
 {
-    public partial class View_Repair_Control : UserControl
+    public partial class CR_Add_Outworker_Success_Control : UserControl
     {
-        public View_Repair_Control()
+        public CR_Add_Outworker_Success_Control()
         {
             InitializeComponent();
         }
