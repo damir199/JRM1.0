@@ -304,7 +304,7 @@
             this.Item_Notes_TB.Multiline = true;
             this.Item_Notes_TB.Name = "Item_Notes_TB";
             this.Item_Notes_TB.Size = new System.Drawing.Size(419, 77);
-            this.Item_Notes_TB.TabIndex = 24;
+            this.Item_Notes_TB.TabIndex = 5;
             // 
             // ITem_Notes_Label
             // 
@@ -331,7 +331,7 @@
             this.Condition_CB.Location = new System.Drawing.Point(210, 50);
             this.Condition_CB.Name = "Condition_CB";
             this.Condition_CB.Size = new System.Drawing.Size(189, 28);
-            this.Condition_CB.TabIndex = 25;
+            this.Condition_CB.TabIndex = 3;
             this.Condition_CB.Text = "Select";
             // 
             // Control_GL
@@ -509,6 +509,7 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(418, 101);
             this.textBox3.Name = "textBox3";
@@ -520,6 +521,7 @@
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(102, 34);
             this.textBox2.Name = "textBox2";
@@ -539,6 +541,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(102, 69);
             this.textBox1.Name = "textBox1";
@@ -548,6 +551,7 @@
             // Repairs_Ongoing_TB
             // 
             this.Repairs_Ongoing_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Ongoing_TB.Enabled = false;
             this.Repairs_Ongoing_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Ongoing_TB.Location = new System.Drawing.Point(418, 66);
             this.Repairs_Ongoing_TB.Name = "Repairs_Ongoing_TB";
@@ -579,6 +583,7 @@
             // Address_TB
             // 
             this.Address_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Address_TB.Enabled = false;
             this.Address_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Address_TB.Location = new System.Drawing.Point(102, 111);
             this.Address_TB.Multiline = true;
@@ -589,6 +594,7 @@
             // Repairs_Total_TB
             // 
             this.Repairs_Total_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Total_TB.Enabled = false;
             this.Repairs_Total_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Total_TB.Location = new System.Drawing.Point(418, 31);
             this.Repairs_Total_TB.Name = "Repairs_Total_TB";
@@ -628,6 +634,7 @@
             // Outworker_Name_TB
             // 
             this.Outworker_Name_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Name_TB.Enabled = false;
             this.Outworker_Name_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Outworker_Name_TB.Location = new System.Drawing.Point(113, 30);
             this.Outworker_Name_TB.Name = "Outworker_Name_TB";
@@ -675,6 +682,7 @@
             // Outworker_Address_TB
             // 
             this.Outworker_Address_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Address_TB.Enabled = false;
             this.Outworker_Address_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Outworker_Address_TB.Location = new System.Drawing.Point(113, 107);
             this.Outworker_Address_TB.Multiline = true;
@@ -705,6 +713,7 @@
             // Outworker_Company_TB
             // 
             this.Outworker_Company_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Company_TB.Enabled = false;
             this.Outworker_Company_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Outworker_Company_TB.Location = new System.Drawing.Point(113, 65);
             this.Outworker_Company_TB.Name = "Outworker_Company_TB";

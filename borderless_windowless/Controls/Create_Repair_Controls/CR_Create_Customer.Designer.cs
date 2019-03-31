@@ -32,6 +32,7 @@
             this.Main_GL = new System.Windows.Forms.TableLayoutPanel();
             this.Inner_Panel = new System.Windows.Forms.Panel();
             this.Contact_Pref_GB = new System.Windows.Forms.GroupBox();
+            this.Mobile_TB = new System.Windows.Forms.TextBox();
             this.Email_Label = new System.Windows.Forms.Label();
             this.Email_TB = new System.Windows.Forms.TextBox();
             this.Mobile_Label = new System.Windows.Forms.Label();
@@ -60,7 +61,6 @@
             this.Last_Name_TB = new System.Windows.Forms.TextBox();
             this.Last_Name_Label = new System.Windows.Forms.Label();
             this.Customer_PB = new System.Windows.Forms.PictureBox();
-            this.Mobile_TB = new System.Windows.Forms.TextBox();
             this.Main_GL.SuspendLayout();
             this.Inner_Panel.SuspendLayout();
             this.Contact_Pref_GB.SuspendLayout();
@@ -115,6 +115,16 @@
             this.Contact_Pref_GB.TabStop = false;
             this.Contact_Pref_GB.Text = "Contact Details ";
             // 
+            // Mobile_TB
+            // 
+            this.Mobile_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Mobile_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mobile_TB.Location = new System.Drawing.Point(141, 77);
+            this.Mobile_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Mobile_TB.Name = "Mobile_TB";
+            this.Mobile_TB.Size = new System.Drawing.Size(180, 26);
+            this.Mobile_TB.TabIndex = 56;
+            // 
             // Email_Label
             // 
             this.Email_Label.AutoSize = true;
@@ -134,7 +144,7 @@
             this.Email_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Email_TB.Name = "Email_TB";
             this.Email_TB.Size = new System.Drawing.Size(180, 26);
-            this.Email_TB.TabIndex = 72;
+            this.Email_TB.TabIndex = 57;
             // 
             // Mobile_Label
             // 
@@ -166,7 +176,7 @@
             this.Phone_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Phone_TB.Name = "Phone_TB";
             this.Phone_TB.Size = new System.Drawing.Size(180, 26);
-            this.Phone_TB.TabIndex = 68;
+            this.Phone_TB.TabIndex = 55;
             // 
             // Contact_Pref_CB
             // 
@@ -182,7 +192,7 @@
             this.Contact_Pref_CB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Contact_Pref_CB.Name = "Contact_Pref_CB";
             this.Contact_Pref_CB.Size = new System.Drawing.Size(263, 28);
-            this.Contact_Pref_CB.TabIndex = 64;
+            this.Contact_Pref_CB.TabIndex = 58;
             this.Contact_Pref_CB.Text = "Phone & Email";
             // 
             // Contact_Pref_Label
@@ -255,6 +265,7 @@
             // Repairs_Total_TB
             // 
             this.Repairs_Total_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Total_TB.Enabled = false;
             this.Repairs_Total_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Total_TB.Location = new System.Drawing.Point(108, 35);
             this.Repairs_Total_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -278,6 +289,7 @@
             // Repairs_Ongoing_TB
             // 
             this.Repairs_Ongoing_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Ongoing_TB.Enabled = false;
             this.Repairs_Ongoing_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Ongoing_TB.Location = new System.Drawing.Point(108, 71);
             this.Repairs_Ongoing_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -301,6 +313,7 @@
             // Repairs_Completed_TB
             // 
             this.Repairs_Completed_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Completed_TB.Enabled = false;
             this.Repairs_Completed_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Completed_TB.Location = new System.Drawing.Point(108, 107);
             this.Repairs_Completed_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -444,16 +457,6 @@
             this.Customer_PB.Size = new System.Drawing.Size(233, 246);
             this.Customer_PB.TabIndex = 72;
             this.Customer_PB.TabStop = false;
-            // 
-            // Mobile_TB
-            // 
-            this.Mobile_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Mobile_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mobile_TB.Location = new System.Drawing.Point(141, 77);
-            this.Mobile_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Mobile_TB.Name = "Mobile_TB";
-            this.Mobile_TB.Size = new System.Drawing.Size(180, 26);
-            this.Mobile_TB.TabIndex = 73;
             // 
             // CR_Create_Customer
             // 
