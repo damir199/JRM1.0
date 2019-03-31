@@ -91,7 +91,7 @@
             // 
             // Add_Repair_Button
             // 
-            this.Add_Repair_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Add_Repair_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.Add_Repair_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_Repair_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -285,7 +285,7 @@
             // 
             // Estimate_Required_Button
             // 
-            this.Estimate_Required_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Estimate_Required_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.Estimate_Required_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Estimate_Required_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Estimate_Required_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -372,7 +372,7 @@
             // 
             // Cancel_Repair_Button
             // 
-            this.Cancel_Repair_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Cancel_Repair_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.Cancel_Repair_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cancel_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancel_Repair_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -460,7 +460,7 @@
             // 
             // CR_New_Customer
             // 
-            this.CR_New_Customer.BackColor = System.Drawing.Color.SkyBlue;
+            this.CR_New_Customer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.CR_New_Customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CR_New_Customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CR_New_Customer.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -474,7 +474,7 @@
             // 
             // Find_Customer_Button
             // 
-            this.Find_Customer_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Find_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.Find_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Find_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Find_Customer_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -636,7 +636,7 @@
             // 
             // Clear_Outworker_Button
             // 
-            this.Clear_Outworker_Button.BackColor = System.Drawing.Color.SkyBlue;
+            this.Clear_Outworker_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.Clear_Outworker_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clear_Outworker_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clear_Outworker_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -650,7 +650,7 @@
             // 
             // CR_Add_Outworker
             // 
-            this.CR_Add_Outworker.BackColor = System.Drawing.Color.SkyBlue;
+            this.CR_Add_Outworker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.CR_Add_Outworker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CR_Add_Outworker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CR_Add_Outworker.ForeColor = System.Drawing.SystemColors.ButtonFace;

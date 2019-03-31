@@ -179,8 +179,10 @@
     <Compile Include="Controls\Customer_Controls\Find_Customer_Control.Designer.cs">
       <DependentUpon>Find_Customer_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functional_Classes\Create_Customer.cs" />
     <Compile Include="Functional_Classes\Create_Repair.cs" />
     <Compile Include="Functional_Classes\Employee_Login_Val.cs" />
+    <Compile Include="JSON\Create_Customer_JSON.cs" />
     <Compile Include="JSON\Create_Repair_JSON.cs" />
     <Compile Include="JSON\Employee_Login.cs" />
     <Compile Include="Main_Form.cs">

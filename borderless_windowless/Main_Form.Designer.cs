@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
             this.SideBar_Panel = new System.Windows.Forms.Panel();
             this.Info_Button = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.JRM_Version_Label = new System.Windows.Forms.Label();
             this.Time_Label = new System.Windows.Forms.Label();
             this.User_Label = new System.Windows.Forms.Label();
+            this.Clock_Timer = new System.Windows.Forms.Timer(this.components);
             this.SideBar_Panel.SuspendLayout();
             this.Body_Panel.SuspendLayout();
             this.Header_Panel.SuspendLayout();
@@ -49,7 +51,8 @@
             // 
             // SideBar_Panel
             // 
-            this.SideBar_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
+            this.SideBar_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
+            this.SideBar_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SideBar_Panel.Controls.Add(this.Info_Button);
             this.SideBar_Panel.Controls.Add(this.Report_Button);
             this.SideBar_Panel.Controls.Add(this.Settings_Button);
@@ -68,9 +71,9 @@
             this.Info_Button.FlatAppearance.BorderSize = 0;
             this.Info_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Info_Button.ForeColor = System.Drawing.Color.White;
-            this.Info_Button.Location = new System.Drawing.Point(0, 723);
+            this.Info_Button.Location = new System.Drawing.Point(0, 721);
             this.Info_Button.Name = "Info_Button";
-            this.Info_Button.Size = new System.Drawing.Size(107, 107);
+            this.Info_Button.Size = new System.Drawing.Size(105, 107);
             this.Info_Button.TabIndex = 3;
             this.Info_Button.UseVisualStyleBackColor = true;
             this.Info_Button.Click += new System.EventHandler(this.Info_Button_Click);
@@ -83,9 +86,9 @@
             this.Report_Button.FlatAppearance.BorderSize = 0;
             this.Report_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Report_Button.ForeColor = System.Drawing.Color.White;
-            this.Report_Button.Location = new System.Drawing.Point(0, 830);
+            this.Report_Button.Location = new System.Drawing.Point(0, 828);
             this.Report_Button.Name = "Report_Button";
-            this.Report_Button.Size = new System.Drawing.Size(107, 107);
+            this.Report_Button.Size = new System.Drawing.Size(105, 107);
             this.Report_Button.TabIndex = 2;
             this.Report_Button.UseVisualStyleBackColor = true;
             this.Report_Button.Click += new System.EventHandler(this.Report_Button_Click);
@@ -98,9 +101,9 @@
             this.Settings_Button.FlatAppearance.BorderSize = 0;
             this.Settings_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_Button.ForeColor = System.Drawing.Color.White;
-            this.Settings_Button.Location = new System.Drawing.Point(0, 937);
+            this.Settings_Button.Location = new System.Drawing.Point(0, 935);
             this.Settings_Button.Name = "Settings_Button";
-            this.Settings_Button.Size = new System.Drawing.Size(107, 107);
+            this.Settings_Button.Size = new System.Drawing.Size(105, 107);
             this.Settings_Button.TabIndex = 1;
             this.Settings_Button.UseVisualStyleBackColor = true;
             this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
@@ -115,7 +118,7 @@
             this.Shutdown_Button.ForeColor = System.Drawing.Color.White;
             this.Shutdown_Button.Location = new System.Drawing.Point(0, 0);
             this.Shutdown_Button.Name = "Shutdown_Button";
-            this.Shutdown_Button.Size = new System.Drawing.Size(107, 107);
+            this.Shutdown_Button.Size = new System.Drawing.Size(105, 107);
             this.Shutdown_Button.TabIndex = 0;
             this.Shutdown_Button.UseVisualStyleBackColor = true;
             this.Shutdown_Button.Click += new System.EventHandler(this.Shutdown_Button_Click);
@@ -140,7 +143,7 @@
             // 
             // Header_Panel
             // 
-            this.Header_Panel.BackColor = System.Drawing.Color.Teal;
+            this.Header_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Header_Panel.Controls.Add(this.Back_Button);
             this.Header_Panel.Controls.Add(this.Date_Label);
             this.Header_Panel.Controls.Add(this.JRM_Version_Label);
@@ -216,6 +219,11 @@
             this.User_Label.TabIndex = 14;
             this.User_Label.Text = "Nick";
             // 
+            // Clock_Timer
+            // 
+            this.Clock_Timer.Enabled = true;
+            this.Clock_Timer.Tick += new System.EventHandler(this.Clock_Timer_Tick);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +260,7 @@
         private System.Windows.Forms.Label User_Label;
         private System.Windows.Forms.Button Back_Button;
         private System.Windows.Forms.Panel Inner_Body_Panel;
+        private System.Windows.Forms.Timer Clock_Timer;
     }
 }
 

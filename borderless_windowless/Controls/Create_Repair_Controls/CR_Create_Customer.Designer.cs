@@ -41,6 +41,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Cancel_Button = new System.Windows.Forms.Button();
             this.Confirm_Button = new System.Windows.Forms.Button();
             this.Repairs_Quantity_Label = new System.Windows.Forms.Label();
             this.Repairs_Total_TB = new System.Windows.Forms.TextBox();
@@ -60,7 +61,6 @@
             this.Last_Name_TB = new System.Windows.Forms.TextBox();
             this.Last_Name_Label = new System.Windows.Forms.Label();
             this.Customer_PB = new System.Windows.Forms.PictureBox();
-            this.Cancel_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -223,10 +223,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Repair Details";
             // 
+            // Cancel_Button
+            // 
+            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cancel_Button.Location = new System.Drawing.Point(127, 149);
+            this.Cancel_Button.Name = "Cancel_Button";
+            this.Cancel_Button.Size = new System.Drawing.Size(94, 92);
+            this.Cancel_Button.TabIndex = 65;
+            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.UseVisualStyleBackColor = false;
+            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
+            // 
             // Confirm_Button
             // 
-            this.Confirm_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
-            this.Confirm_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Confirm_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
             this.Confirm_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Confirm_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Confirm_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -441,21 +454,6 @@
             this.Customer_PB.Size = new System.Drawing.Size(233, 246);
             this.Customer_PB.TabIndex = 72;
             this.Customer_PB.TabStop = false;
-            // 
-            // Cancel_Button
-            // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
-            this.Cancel_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancel_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Cancel_Button.Location = new System.Drawing.Point(127, 149);
-            this.Cancel_Button.Name = "Cancel_Button";
-            this.Cancel_Button.Size = new System.Drawing.Size(94, 92);
-            this.Cancel_Button.TabIndex = 65;
-            this.Cancel_Button.Text = "Cancel";
-            this.Cancel_Button.UseVisualStyleBackColor = false;
-            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
             // CR_Create_Customer
             // 

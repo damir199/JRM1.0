@@ -47,7 +47,7 @@ namespace borderless_windowless
         {
 
             Date_Label.Text = DateTime.Today.ToString("dd/MM/yyyy");
-            Time_Label.Text = DateTime.Now.ToString("h:mmtt");
+            
             _obj = this;
             Main_Control mc = new Main_Control
             {
@@ -102,6 +102,12 @@ namespace borderless_windowless
             }
             Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(SC);
             Main_Form.Instance.Inner_Body_Panel_Container.Controls["Support_Control"].BringToFront();
+
+        }
+
+        private void Clock_Timer_Tick(object sender, EventArgs e)
+        {
+            Time_Label.Text = DateTime.Now.ToString("h:mm:sstt");
 
         }
     }

@@ -40,6 +40,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.Repairs_Quantity_Label = new System.Windows.Forms.Label();
             this.Repairs_Ongoing_Label = new System.Windows.Forms.Label();
             this.Repairs_Ongoing_TB = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.First_Name_Label = new System.Windows.Forms.Label();
             this.Last_Name_TB = new System.Windows.Forms.TextBox();
             this.Last_Name_Label = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -210,6 +210,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Data Settings";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(137, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 32);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Backup";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Repairs_Quantity_Label
             // 
             this.Repairs_Quantity_Label.AutoSize = true;
@@ -322,19 +335,6 @@
             this.Last_Name_Label.Size = new System.Drawing.Size(141, 20);
             this.Last_Name_Label.TabIndex = 45;
             this.Last_Name_Label.Text = "External Database";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(221)))), ((int)(((byte)(141)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(137, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 32);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Backup";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // Settings_Control
             // 

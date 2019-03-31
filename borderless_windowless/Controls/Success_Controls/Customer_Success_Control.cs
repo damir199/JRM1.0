@@ -23,7 +23,7 @@ namespace Jewellery_Repair_Window_2019.Controls
             if (Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Customer_Success_Control"))
             {
 
-                Main_Form.Instance.Inner_Body_Panel_Container.Controls["Create_Repair_Control"].BringToFront();
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls["Main_Control"].BringToFront();
                 Main_Form.Instance.Inner_Body_Panel_Container.Controls["Customer_Success_Control"].Dispose();
 
             }

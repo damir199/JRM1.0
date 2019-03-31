@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_User_Control));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Phone_TB = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Mobile_TB = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Email_TB = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.confirm_Button = new System.Windows.Forms.Button();
+            this.Contact_Pref_CB = new System.Windows.Forms.Button();
             this.Repairs_Quantity_Label = new System.Windows.Forms.Label();
             this.Repairs_Total_TB = new System.Windows.Forms.TextBox();
             this.Repairs_Ongoing_Label = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.Customer_PB = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.Phone_TB.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Customer_PB)).BeginInit();
@@ -87,7 +87,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.Phone_TB);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.Customer_PB);
@@ -97,22 +97,22 @@
             this.panel1.Size = new System.Drawing.Size(1029, 894);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox2
+            // Phone_TB
             // 
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Location = new System.Drawing.Point(464, 287);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(412, 249);
-            this.groupBox2.TabIndex = 74;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Confirm";
+            this.Phone_TB.Controls.Add(this.label6);
+            this.Phone_TB.Controls.Add(this.label5);
+            this.Phone_TB.Controls.Add(this.textBox5);
+            this.Phone_TB.Controls.Add(this.comboBox1);
+            this.Phone_TB.Controls.Add(this.Mobile_TB);
+            this.Phone_TB.Controls.Add(this.label8);
+            this.Phone_TB.Controls.Add(this.Email_TB);
+            this.Phone_TB.Controls.Add(this.label7);
+            this.Phone_TB.Location = new System.Drawing.Point(464, 287);
+            this.Phone_TB.Name = "Phone_TB";
+            this.Phone_TB.Size = new System.Drawing.Size(412, 249);
+            this.Phone_TB.TabIndex = 74;
+            this.Phone_TB.TabStop = false;
+            this.Phone_TB.Text = "Confirm";
             // 
             // label6
             // 
@@ -163,15 +163,15 @@
             this.comboBox1.TabIndex = 64;
             this.comboBox1.Text = "Phone & Email";
             // 
-            // textBox6
+            // Mobile_TB
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(141, 77);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(180, 26);
-            this.textBox6.TabIndex = 71;
+            this.Mobile_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Mobile_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mobile_TB.Location = new System.Drawing.Point(141, 77);
+            this.Mobile_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Mobile_TB.Name = "Mobile_TB";
+            this.Mobile_TB.Size = new System.Drawing.Size(180, 26);
+            this.Mobile_TB.TabIndex = 71;
             // 
             // label8
             // 
@@ -184,15 +184,15 @@
             this.label8.TabIndex = 63;
             this.label8.Text = "Contact Preference";
             // 
-            // textBox4
+            // Email_TB
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(141, 113);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 26);
-            this.textBox4.TabIndex = 69;
+            this.Email_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Email_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email_TB.Location = new System.Drawing.Point(141, 113);
+            this.Email_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Email_TB.Name = "Email_TB";
+            this.Email_TB.Size = new System.Drawing.Size(180, 26);
+            this.Email_TB.TabIndex = 69;
             // 
             // label7
             // 
@@ -207,7 +207,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.confirm_Button);
+            this.groupBox3.Controls.Add(this.Contact_Pref_CB);
             this.groupBox3.Controls.Add(this.Repairs_Quantity_Label);
             this.groupBox3.Controls.Add(this.Repairs_Total_TB);
             this.groupBox3.Controls.Add(this.Repairs_Ongoing_Label);
@@ -221,20 +221,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Repair Details";
             // 
-            // confirm_Button
+            // Contact_Pref_CB
             // 
-            this.confirm_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(178)))), ((int)(((byte)(162)))));
-            this.confirm_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.confirm_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.confirm_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.confirm_Button.Location = new System.Drawing.Point(6, 149);
-            this.confirm_Button.Name = "confirm_Button";
-            this.confirm_Button.Size = new System.Drawing.Size(215, 92);
-            this.confirm_Button.TabIndex = 64;
-            this.confirm_Button.Text = "Save";
-            this.confirm_Button.UseVisualStyleBackColor = false;
-            this.confirm_Button.Click += new System.EventHandler(this.confirm_Button_Click);
+            this.Contact_Pref_CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.Contact_Pref_CB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Contact_Pref_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contact_Pref_CB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Contact_Pref_CB.Location = new System.Drawing.Point(6, 149);
+            this.Contact_Pref_CB.Name = "Contact_Pref_CB";
+            this.Contact_Pref_CB.Size = new System.Drawing.Size(215, 92);
+            this.Contact_Pref_CB.TabIndex = 64;
+            this.Contact_Pref_CB.Text = "Save";
+            this.Contact_Pref_CB.UseVisualStyleBackColor = false;
+            this.Contact_Pref_CB.Click += new System.EventHandler(this.confirm_Button_Click);
             // 
             // Repairs_Quantity_Label
             // 
@@ -449,8 +448,8 @@
             this.Size = new System.Drawing.Size(1150, 1000);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Phone_TB.ResumeLayout(false);
+            this.Phone_TB.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -464,17 +463,17 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox Phone_TB;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Mobile_TB;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Email_TB;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button confirm_Button;
+        private System.Windows.Forms.Button Contact_Pref_CB;
         private System.Windows.Forms.Label Repairs_Quantity_Label;
         private System.Windows.Forms.TextBox Repairs_Total_TB;
         private System.Windows.Forms.Label Repairs_Ongoing_Label;

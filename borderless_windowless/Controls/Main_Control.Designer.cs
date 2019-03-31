@@ -78,7 +78,7 @@
             // 
             // Find_Repair_Button
             // 
-            this.Find_Repair_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Find_Repair_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Find_Repair_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Find_Repair_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Find_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,7 +96,7 @@
             // 
             // Create_Customer_Button
             // 
-            this.Create_Customer_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Create_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Create_Customer_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Create_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Create_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,7 +114,7 @@
             // 
             // Logout_Button
             // 
-            this.Logout_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Logout_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Logout_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Logout_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,7 +133,7 @@
             // 
             // Find_Customer_Button
             // 
-            this.Find_Customer_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Find_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Find_Customer_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Find_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Find_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,7 +151,7 @@
             // 
             // Login_Button
             // 
-            this.Login_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Login_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Login_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,7 +170,7 @@
             // 
             // Create_Repair_Button
             // 
-            this.Create_Repair_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Create_Repair_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Create_Repair_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Create_Repair_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Create_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,7 +188,7 @@
             // 
             // Repairs_Button
             // 
-            this.Repairs_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Repairs_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Repairs_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Repairs_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Repairs_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,7 +206,7 @@
             // 
             // Customers_Button
             // 
-            this.Customers_Button.BackColor = System.Drawing.Color.Turquoise;
+            this.Customers_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(185)))), ((int)(((byte)(170)))));
             this.Customers_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Customers_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Customers_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
