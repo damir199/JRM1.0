@@ -24,24 +24,30 @@ namespace Jewellery_Repair_System
 
         private void Add_Repair_Button_Click(object sender, EventArgs e)
         {
-            string Category = Categories_CB.SelectedItem.ToString();
-            string Condition = Condition_CB.SelectedItem.ToString();
-            string Work_Required = Work_Required_TB.Text.ToString();
-            string Notes = Item_Notes_TB.Text.ToString();
+            //Validation of Text Boxes to see if they are not empty.
+            if (Item_Notes_TB.Text.Length != 0 && Work_Required_TB.Text.Length != 0 && Condition_CB.Text.Length != 0 && Condition_CB.Text.Length != 0 ) {
+                string Category = Categories_CB.SelectedItem.ToString();
+                string Condition = Condition_CB.SelectedItem.ToString();
+                string Work_Required = Work_Required_TB.Text.ToString();
+                string Notes = Item_Notes_TB.Text.ToString();
 
-            if (Create_Repair.Create_Repair_Func(Category, Condition, Work_Required, Notes) == true) {
-                Repair_Success_Control CR_SC = new Repair_Success_Control
-                {
-                    Dock = DockStyle.Fill
+                if (Create_Repair.Create_Repair_Func(Category, Condition, Work_Required, Notes) == true) {
+                    Repair_Success_Control CR_SC = new Repair_Success_Control
+                    {
+                        Dock = DockStyle.Fill
+                    };
+                    Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CR_SC);
+                    Main_Form.Instance.Inner_Body_Panel_Container.Controls["Repair_Success_Control"].BringToFront();
+
+                } else {
+                    MessageBox.Show("There's Been An Error Creating Your Repair.");
+
                 };
-                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CR_SC);
-                Main_Form.Instance.Inner_Body_Panel_Container.Controls["Repair_Success_Control"].BringToFront();
-
-            }else{
-                MessageBox.Show("There's Been An Error Creating Your Repair.");
-
-            };
-            
+            }
+            else
+            {
+                MessageBox.Show("Please Fill In All The Fields Before Proceeding!");
+            }
 
         }
         private void CR_New_Customer_Click(object sender, EventArgs e)

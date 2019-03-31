@@ -82,11 +82,23 @@
     <Compile Include="Controls\Create_Repair_Controls\CR_Add_Outworker_Success_Control.Designer.cs">
       <DependentUpon>CR_Add_Outworker_Success_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Customer_Controls\Customers_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Customer_Controls\Customers_Control.Designer.cs">
+      <DependentUpon>Customers_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Information_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\Information_Control.Designer.cs">
       <DependentUpon>Information_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Repair_Controls\Repairs_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Repair_Controls\Repairs_Control.Designer.cs">
+      <DependentUpon>Repairs_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Success_Controls\Logout_Success_Control.cs">
       <SubType>UserControl</SubType>
@@ -235,8 +247,14 @@
     <EmbeddedResource Include="Controls\Create_Repair_Controls\CR_Add_Outworker_Success_Control.resx">
       <DependentUpon>CR_Add_Outworker_Success_Control.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Customer_Controls\Customers_Control.resx">
+      <DependentUpon>Customers_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Information_Control.resx">
       <DependentUpon>Information_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Repair_Controls\Repairs_Control.resx">
+      <DependentUpon>Repairs_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Settings_Control.resx">
       <DependentUpon>Settings_Control.cs</DependentUpon>

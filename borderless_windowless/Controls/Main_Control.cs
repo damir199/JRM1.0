@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Jewellery_Repair_Window_2019.Controls;
+using Jewellery_Repair_Window_2019.Controls.Repair_Controls;
+using Jewellery_Repair_Window_2019.Controls.Customer_Controls;
 
 namespace Jewellery_Repair_System
 {
@@ -22,10 +24,32 @@ namespace Jewellery_Repair_System
         //They are comprised of Buttons on a Grid Layout with an inner Panel.
         private void Repairs_Button_Click(object sender, EventArgs e)
         {
+            if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+            {
+                Repairs_Control RC = new Repairs_Control
+                {
+                    Dock = DockStyle.Fill
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(RC);
+               
 
+            }
+            Main_Form.Instance.Inner_Body_Panel_Container.Controls["Repairs_Control"].BringToFront();
         }
         private void Customers_Button_Click(object sender, EventArgs e)
         {
+            if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+            {
+                Customers_Control CC = new Customers_Control
+                {
+                    Dock = DockStyle.Fill
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CC);
+
+
+            }
+            Main_Form.Instance.Inner_Body_Panel_Container.Controls["Customers_Control"].BringToFront();
+
 
         }
         private void Login_Button_Click(object sender, EventArgs e)
