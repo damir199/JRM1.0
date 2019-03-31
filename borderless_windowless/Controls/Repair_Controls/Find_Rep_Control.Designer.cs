@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Repair_ID_TB = new System.Windows.Forms.TextBox();
             this.Search_Label = new System.Windows.Forms.Label();
             this.Search_Repair_Button = new System.Windows.Forms.Button();
-            this.View_Repair_Button = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Results_TB = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -46,14 +46,14 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Repair_ID_TB
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 26);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "R0000000000000000001";
+            this.Repair_ID_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Repair_ID_TB.Location = new System.Drawing.Point(10, 88);
+            this.Repair_ID_TB.Name = "Repair_ID_TB";
+            this.Repair_ID_TB.Size = new System.Drawing.Size(195, 26);
+            this.Repair_ID_TB.TabIndex = 5;
+            this.Repair_ID_TB.Text = "R-0000-0000-0000-0001";
             // 
             // Search_Label
             // 
@@ -77,28 +77,14 @@
             this.Search_Repair_Button.TabIndex = 3;
             this.Search_Repair_Button.Text = "Search";
             this.Search_Repair_Button.UseVisualStyleBackColor = false;
-            // 
-            // View_Repair_Button
-            // 
-            this.View_Repair_Button.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.View_Repair_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.View_Repair_Button.ItemHeight = 20;
-            this.View_Repair_Button.Items.AddRange(new object[] {
-            "R-0125-8654-9584",
-            "R-2548-9658-6899",
-            "R-2548-9652-6154"});
-            this.View_Repair_Button.Location = new System.Drawing.Point(22, 42);
-            this.View_Repair_Button.Name = "View_Repair_Button";
-            this.View_Repair_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.View_Repair_Button.Size = new System.Drawing.Size(485, 142);
-            this.View_Repair_Button.TabIndex = 10;
+            this.Search_Repair_Button.Click += new System.EventHandler(this.Search_Repair_Button_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.Search_Label);
             this.groupBox1.Controls.Add(this.Search_Repair_Button);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.Repair_ID_TB);
             this.groupBox1.Location = new System.Drawing.Point(267, 80);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(216, 209);
@@ -106,9 +92,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search Criteria";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(112, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 74);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "View";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.View_Repair_Button);
+            this.groupBox2.Controls.Add(this.Results_TB);
             this.groupBox2.Location = new System.Drawing.Point(267, 295);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(522, 200);
@@ -169,18 +168,13 @@
             this.panel1.Size = new System.Drawing.Size(1029, 894);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // Results_TB
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(112, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 74);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "View";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Results_TB.Location = new System.Drawing.Point(45, 36);
+            this.Results_TB.Multiline = true;
+            this.Results_TB.Name = "Results_TB";
+            this.Results_TB.Size = new System.Drawing.Size(449, 149);
+            this.Results_TB.TabIndex = 0;
             // 
             // Find_Rep_Control
             // 
@@ -192,6 +186,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -201,10 +196,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Repair_ID_TB;
         private System.Windows.Forms.Label Search_Label;
         private System.Windows.Forms.Button Search_Repair_Button;
-        private System.Windows.Forms.ListBox View_Repair_Button;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -212,5 +206,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Results_TB;
     }
 }

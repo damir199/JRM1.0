@@ -13,6 +13,7 @@ namespace Jewellery_Repair_Window_2019.JSON
         //this is needed for deserealization
         [BsonRepresentation(BsonType.ObjectId)]
         public string _id { get; set; }
+        public string Repair_Number { get; set; }
         public string Category { get; set; }
         public string Condition { get; set; }
         public string Work_Required { get; set; }
