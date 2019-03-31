@@ -160,5 +160,37 @@ namespace Jewellery_Repair_System
             Main_Form.Instance.Inner_Body_Panel_Container.Controls["Create_Repair_Control"].BringToFront();
 
         }
+
+        private void CO_Button_Click(object sender, EventArgs e)
+        {
+            if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+            {
+
+                Create_Outworker_Control CO = new Create_Outworker_Control
+                {
+                    Dock = DockStyle.Fill
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(CO);
+
+            }
+            Main_Form.Instance.Inner_Body_Panel_Container.Controls["Create_Outworker_Control"].BringToFront();
+
+        }
+
+        private void FO_Button_Click(object sender, EventArgs e)
+        {
+            if (!Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Home_Control"))
+            {
+                 
+
+                Find_Outworker FO = new Find_Outworker
+                {
+                    Dock = DockStyle.Fill
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(FO);
+
+            }
+            Main_Form.Instance.Inner_Body_Panel_Container.Controls["Find_Outworker"].BringToFront();
+        }
     }
 }

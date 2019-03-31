@@ -34,11 +34,12 @@
             this.Outworker_Contact_GB = new System.Windows.Forms.GroupBox();
             this.Phone_Label = new System.Windows.Forms.Label();
             this.Email_Label = new System.Windows.Forms.Label();
-            this.Phone_TB = new System.Windows.Forms.TextBox();
-            this.Mobile_TB = new System.Windows.Forms.TextBox();
-            this.Email_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Phone_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Email_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Mobile_TB = new System.Windows.Forms.TextBox();
             this.Mobile_Label = new System.Windows.Forms.Label();
             this.Repair_Stats_GB = new System.Windows.Forms.GroupBox();
+            this.Cancel_Button = new System.Windows.Forms.Button();
             this.Confirm_Button = new System.Windows.Forms.Button();
             this.Repairs_Total_Label = new System.Windows.Forms.Label();
             this.Repairs_Total_TB = new System.Windows.Forms.TextBox();
@@ -47,18 +48,19 @@
             this.Repairs_Completed_Label = new System.Windows.Forms.Label();
             this.Repairs_Completed_TB = new System.Windows.Forms.TextBox();
             this.Outworker_Detail_GB = new System.Windows.Forms.GroupBox();
-            this.First_Name_TB = new System.Windows.Forms.TextBox();
-            this.Postcode_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Name_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Postcode_TB = new System.Windows.Forms.TextBox();
             this.Postcode_Label = new System.Windows.Forms.Label();
-            this.Add_Line2_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Add2_TB = new System.Windows.Forms.TextBox();
             this.Add_Line2_Label = new System.Windows.Forms.Label();
-            this.Add_Line1_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Add1_TB = new System.Windows.Forms.TextBox();
             this.Outworker_Name_Label = new System.Windows.Forms.Label();
             this.Add_Line1_Label = new System.Windows.Forms.Label();
-            this.Last_Name_TB = new System.Windows.Forms.TextBox();
+            this.Outworker_Company_TB = new System.Windows.Forms.TextBox();
             this.Outworker_Company_Label = new System.Windows.Forms.Label();
             this.Customer_PB = new System.Windows.Forms.PictureBox();
-            this.Cancel_Button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Outworker_Status_CB = new System.Windows.Forms.ComboBox();
             this.Main_TL.SuspendLayout();
             this.Inner_Panel.SuspendLayout();
             this.Outworker_Contact_GB.SuspendLayout();
@@ -100,12 +102,12 @@
             // 
             this.Outworker_Contact_GB.Controls.Add(this.Phone_Label);
             this.Outworker_Contact_GB.Controls.Add(this.Email_Label);
-            this.Outworker_Contact_GB.Controls.Add(this.Phone_TB);
-            this.Outworker_Contact_GB.Controls.Add(this.Mobile_TB);
-            this.Outworker_Contact_GB.Controls.Add(this.Email_TB);
+            this.Outworker_Contact_GB.Controls.Add(this.Outworker_Phone_TB);
+            this.Outworker_Contact_GB.Controls.Add(this.Outworker_Email_TB);
+            this.Outworker_Contact_GB.Controls.Add(this.Outworker_Mobile_TB);
             this.Outworker_Contact_GB.Controls.Add(this.Mobile_Label);
             this.Outworker_Contact_GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Outworker_Contact_GB.Location = new System.Drawing.Point(464, 287);
+            this.Outworker_Contact_GB.Location = new System.Drawing.Point(464, 313);
             this.Outworker_Contact_GB.Name = "Outworker_Contact_GB";
             this.Outworker_Contact_GB.Size = new System.Drawing.Size(412, 249);
             this.Outworker_Contact_GB.TabIndex = 74;
@@ -127,48 +129,48 @@
             // 
             this.Email_Label.AutoSize = true;
             this.Email_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email_Label.Location = new System.Drawing.Point(85, 127);
+            this.Email_Label.Location = new System.Drawing.Point(92, 127);
             this.Email_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Email_Label.Name = "Email_Label";
             this.Email_Label.Size = new System.Drawing.Size(48, 20);
             this.Email_Label.TabIndex = 67;
             this.Email_Label.Text = "Email";
             // 
-            // Phone_TB
+            // Outworker_Phone_TB
             // 
-            this.Phone_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Phone_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Phone_TB.Location = new System.Drawing.Point(148, 53);
-            this.Phone_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Phone_TB.Name = "Phone_TB";
-            this.Phone_TB.Size = new System.Drawing.Size(180, 26);
-            this.Phone_TB.TabIndex = 68;
+            this.Outworker_Phone_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Phone_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Phone_TB.Location = new System.Drawing.Point(148, 53);
+            this.Outworker_Phone_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Phone_TB.Name = "Outworker_Phone_TB";
+            this.Outworker_Phone_TB.Size = new System.Drawing.Size(180, 26);
+            this.Outworker_Phone_TB.TabIndex = 68;
             // 
-            // Mobile_TB
+            // Outworker_Email_TB
             // 
-            this.Mobile_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Mobile_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mobile_TB.Location = new System.Drawing.Point(148, 89);
-            this.Mobile_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Mobile_TB.Name = "Mobile_TB";
-            this.Mobile_TB.Size = new System.Drawing.Size(180, 26);
-            this.Mobile_TB.TabIndex = 71;
+            this.Outworker_Email_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Email_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Email_TB.Location = new System.Drawing.Point(148, 125);
+            this.Outworker_Email_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Email_TB.Name = "Outworker_Email_TB";
+            this.Outworker_Email_TB.Size = new System.Drawing.Size(180, 26);
+            this.Outworker_Email_TB.TabIndex = 71;
             // 
-            // Email_TB
+            // Outworker_Mobile_TB
             // 
-            this.Email_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Email_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email_TB.Location = new System.Drawing.Point(148, 125);
-            this.Email_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Email_TB.Name = "Email_TB";
-            this.Email_TB.Size = new System.Drawing.Size(180, 26);
-            this.Email_TB.TabIndex = 69;
+            this.Outworker_Mobile_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Mobile_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Mobile_TB.Location = new System.Drawing.Point(148, 89);
+            this.Outworker_Mobile_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Mobile_TB.Name = "Outworker_Mobile_TB";
+            this.Outworker_Mobile_TB.Size = new System.Drawing.Size(180, 26);
+            this.Outworker_Mobile_TB.TabIndex = 69;
             // 
             // Mobile_Label
             // 
             this.Mobile_Label.AutoSize = true;
             this.Mobile_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mobile_Label.Location = new System.Drawing.Point(85, 95);
+            this.Mobile_Label.Location = new System.Drawing.Point(85, 91);
             this.Mobile_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Mobile_Label.Name = "Mobile_Label";
             this.Mobile_Label.Size = new System.Drawing.Size(55, 20);
@@ -193,6 +195,19 @@
             this.Repair_Stats_GB.TabStop = false;
             this.Repair_Stats_GB.Text = "Repair Details";
             // 
+            // Cancel_Button
+            // 
+            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cancel_Button.Location = new System.Drawing.Point(118, 149);
+            this.Cancel_Button.Name = "Cancel_Button";
+            this.Cancel_Button.Size = new System.Drawing.Size(103, 92);
+            this.Cancel_Button.TabIndex = 65;
+            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.UseVisualStyleBackColor = false;
+            // 
             // Confirm_Button
             // 
             this.Confirm_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
@@ -205,6 +220,7 @@
             this.Confirm_Button.TabIndex = 64;
             this.Confirm_Button.Text = "Confirm";
             this.Confirm_Button.UseVisualStyleBackColor = false;
+            this.Confirm_Button.Click += new System.EventHandler(this.Confirm_Button_Click);
             // 
             // Repairs_Total_Label
             // 
@@ -220,6 +236,7 @@
             // Repairs_Total_TB
             // 
             this.Repairs_Total_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Total_TB.Enabled = false;
             this.Repairs_Total_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Total_TB.Location = new System.Drawing.Point(108, 35);
             this.Repairs_Total_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -243,6 +260,7 @@
             // Repairs_Ongoing_TB
             // 
             this.Repairs_Ongoing_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Ongoing_TB.Enabled = false;
             this.Repairs_Ongoing_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Ongoing_TB.Location = new System.Drawing.Point(108, 71);
             this.Repairs_Ongoing_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -266,6 +284,7 @@
             // Repairs_Completed_TB
             // 
             this.Repairs_Completed_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Repairs_Completed_TB.Enabled = false;
             this.Repairs_Completed_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Repairs_Completed_TB.Location = new System.Drawing.Point(108, 107);
             this.Repairs_Completed_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -277,43 +296,45 @@
             // 
             // Outworker_Detail_GB
             // 
-            this.Outworker_Detail_GB.Controls.Add(this.First_Name_TB);
-            this.Outworker_Detail_GB.Controls.Add(this.Postcode_TB);
+            this.Outworker_Detail_GB.Controls.Add(this.Outworker_Status_CB);
+            this.Outworker_Detail_GB.Controls.Add(this.label1);
+            this.Outworker_Detail_GB.Controls.Add(this.Outworker_Name_TB);
+            this.Outworker_Detail_GB.Controls.Add(this.Outworker_Postcode_TB);
             this.Outworker_Detail_GB.Controls.Add(this.Postcode_Label);
-            this.Outworker_Detail_GB.Controls.Add(this.Add_Line2_TB);
+            this.Outworker_Detail_GB.Controls.Add(this.Outworker_Add2_TB);
             this.Outworker_Detail_GB.Controls.Add(this.Add_Line2_Label);
-            this.Outworker_Detail_GB.Controls.Add(this.Add_Line1_TB);
+            this.Outworker_Detail_GB.Controls.Add(this.Outworker_Add1_TB);
             this.Outworker_Detail_GB.Controls.Add(this.Outworker_Name_Label);
             this.Outworker_Detail_GB.Controls.Add(this.Add_Line1_Label);
-            this.Outworker_Detail_GB.Controls.Add(this.Last_Name_TB);
+            this.Outworker_Detail_GB.Controls.Add(this.Outworker_Company_TB);
             this.Outworker_Detail_GB.Controls.Add(this.Outworker_Company_Label);
             this.Outworker_Detail_GB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Outworker_Detail_GB.Location = new System.Drawing.Point(464, 35);
             this.Outworker_Detail_GB.Name = "Outworker_Detail_GB";
-            this.Outworker_Detail_GB.Size = new System.Drawing.Size(412, 246);
+            this.Outworker_Detail_GB.Size = new System.Drawing.Size(412, 272);
             this.Outworker_Detail_GB.TabIndex = 73;
             this.Outworker_Detail_GB.TabStop = false;
             this.Outworker_Detail_GB.Text = "Outworker Details";
             // 
-            // First_Name_TB
+            // Outworker_Name_TB
             // 
-            this.First_Name_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.First_Name_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.First_Name_TB.Location = new System.Drawing.Point(186, 45);
-            this.First_Name_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.First_Name_TB.Name = "First_Name_TB";
-            this.First_Name_TB.Size = new System.Drawing.Size(201, 26);
-            this.First_Name_TB.TabIndex = 46;
+            this.Outworker_Name_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Name_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Name_TB.Location = new System.Drawing.Point(186, 45);
+            this.Outworker_Name_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Name_TB.Name = "Outworker_Name_TB";
+            this.Outworker_Name_TB.Size = new System.Drawing.Size(201, 26);
+            this.Outworker_Name_TB.TabIndex = 46;
             // 
-            // Postcode_TB
+            // Outworker_Postcode_TB
             // 
-            this.Postcode_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Postcode_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Postcode_TB.Location = new System.Drawing.Point(186, 189);
-            this.Postcode_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Postcode_TB.Name = "Postcode_TB";
-            this.Postcode_TB.Size = new System.Drawing.Size(204, 26);
-            this.Postcode_TB.TabIndex = 54;
+            this.Outworker_Postcode_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Postcode_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Postcode_TB.Location = new System.Drawing.Point(186, 189);
+            this.Outworker_Postcode_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Postcode_TB.Name = "Outworker_Postcode_TB";
+            this.Outworker_Postcode_TB.Size = new System.Drawing.Size(204, 26);
+            this.Outworker_Postcode_TB.TabIndex = 54;
             // 
             // Postcode_Label
             // 
@@ -326,15 +347,15 @@
             this.Postcode_Label.TabIndex = 52;
             this.Postcode_Label.Text = "Postcode";
             // 
-            // Add_Line2_TB
+            // Outworker_Add2_TB
             // 
-            this.Add_Line2_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Add_Line2_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_Line2_TB.Location = new System.Drawing.Point(186, 153);
-            this.Add_Line2_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Add_Line2_TB.Name = "Add_Line2_TB";
-            this.Add_Line2_TB.Size = new System.Drawing.Size(204, 26);
-            this.Add_Line2_TB.TabIndex = 51;
+            this.Outworker_Add2_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Add2_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Add2_TB.Location = new System.Drawing.Point(186, 153);
+            this.Outworker_Add2_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Add2_TB.Name = "Outworker_Add2_TB";
+            this.Outworker_Add2_TB.Size = new System.Drawing.Size(204, 26);
+            this.Outworker_Add2_TB.TabIndex = 51;
             // 
             // Add_Line2_Label
             // 
@@ -347,15 +368,15 @@
             this.Add_Line2_Label.TabIndex = 50;
             this.Add_Line2_Label.Text = "Address Line 2";
             // 
-            // Add_Line1_TB
+            // Outworker_Add1_TB
             // 
-            this.Add_Line1_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Add_Line1_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_Line1_TB.Location = new System.Drawing.Point(186, 117);
-            this.Add_Line1_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Add_Line1_TB.Name = "Add_Line1_TB";
-            this.Add_Line1_TB.Size = new System.Drawing.Size(204, 26);
-            this.Add_Line1_TB.TabIndex = 49;
+            this.Outworker_Add1_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Add1_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Add1_TB.Location = new System.Drawing.Point(186, 117);
+            this.Outworker_Add1_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Add1_TB.Name = "Outworker_Add1_TB";
+            this.Outworker_Add1_TB.Size = new System.Drawing.Size(204, 26);
+            this.Outworker_Add1_TB.TabIndex = 49;
             // 
             // Outworker_Name_Label
             // 
@@ -379,15 +400,15 @@
             this.Add_Line1_Label.TabIndex = 48;
             this.Add_Line1_Label.Text = "Address Line 1";
             // 
-            // Last_Name_TB
+            // Outworker_Company_TB
             // 
-            this.Last_Name_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Last_Name_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Last_Name_TB.Location = new System.Drawing.Point(186, 81);
-            this.Last_Name_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Last_Name_TB.Name = "Last_Name_TB";
-            this.Last_Name_TB.Size = new System.Drawing.Size(204, 26);
-            this.Last_Name_TB.TabIndex = 47;
+            this.Outworker_Company_TB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Outworker_Company_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Outworker_Company_TB.Location = new System.Drawing.Point(186, 81);
+            this.Outworker_Company_TB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Outworker_Company_TB.Name = "Outworker_Company_TB";
+            this.Outworker_Company_TB.Size = new System.Drawing.Size(204, 26);
+            this.Outworker_Company_TB.TabIndex = 47;
             // 
             // Outworker_Company_Label
             // 
@@ -411,18 +432,28 @@
             this.Customer_PB.TabIndex = 72;
             this.Customer_PB.TabStop = false;
             // 
-            // Cancel_Button
+            // label1
             // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
-            this.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancel_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Cancel_Button.Location = new System.Drawing.Point(118, 149);
-            this.Cancel_Button.Name = "Cancel_Button";
-            this.Cancel_Button.Size = new System.Drawing.Size(103, 92);
-            this.Cancel_Button.TabIndex = 65;
-            this.Cancel_Button.Text = "Cancel";
-            this.Cancel_Button.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(99, 227);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Status";
+            // 
+            // Outworker_Status_CB
+            // 
+            this.Outworker_Status_CB.FormattingEnabled = true;
+            this.Outworker_Status_CB.Items.AddRange(new object[] {
+            "Active",
+            "Inactive"});
+            this.Outworker_Status_CB.Location = new System.Drawing.Point(186, 223);
+            this.Outworker_Status_CB.Name = "Outworker_Status_CB";
+            this.Outworker_Status_CB.Size = new System.Drawing.Size(204, 32);
+            this.Outworker_Status_CB.TabIndex = 56;
+            this.Outworker_Status_CB.Text = "Select";
             // 
             // Create_Outworker_Control
             // 
@@ -451,9 +482,9 @@
         private System.Windows.Forms.GroupBox Outworker_Contact_GB;
         private System.Windows.Forms.Label Phone_Label;
         private System.Windows.Forms.Label Email_Label;
-        private System.Windows.Forms.TextBox Phone_TB;
-        private System.Windows.Forms.TextBox Mobile_TB;
-        private System.Windows.Forms.TextBox Email_TB;
+        private System.Windows.Forms.TextBox Outworker_Phone_TB;
+        private System.Windows.Forms.TextBox Outworker_Email_TB;
+        private System.Windows.Forms.TextBox Outworker_Mobile_TB;
         private System.Windows.Forms.Label Mobile_Label;
         private System.Windows.Forms.GroupBox Repair_Stats_GB;
         private System.Windows.Forms.Button Confirm_Button;
@@ -464,17 +495,19 @@
         private System.Windows.Forms.Label Repairs_Completed_Label;
         private System.Windows.Forms.TextBox Repairs_Completed_TB;
         private System.Windows.Forms.GroupBox Outworker_Detail_GB;
-        private System.Windows.Forms.TextBox First_Name_TB;
-        private System.Windows.Forms.TextBox Postcode_TB;
+        private System.Windows.Forms.TextBox Outworker_Name_TB;
+        private System.Windows.Forms.TextBox Outworker_Postcode_TB;
         private System.Windows.Forms.Label Postcode_Label;
-        private System.Windows.Forms.TextBox Add_Line2_TB;
+        private System.Windows.Forms.TextBox Outworker_Add2_TB;
         private System.Windows.Forms.Label Add_Line2_Label;
-        private System.Windows.Forms.TextBox Add_Line1_TB;
+        private System.Windows.Forms.TextBox Outworker_Add1_TB;
         private System.Windows.Forms.Label Outworker_Name_Label;
         private System.Windows.Forms.Label Add_Line1_Label;
-        private System.Windows.Forms.TextBox Last_Name_TB;
+        private System.Windows.Forms.TextBox Outworker_Company_TB;
         private System.Windows.Forms.Label Outworker_Company_Label;
         private System.Windows.Forms.PictureBox Customer_PB;
         private System.Windows.Forms.Button Cancel_Button;
+        private System.Windows.Forms.ComboBox Outworker_Status_CB;
+        private System.Windows.Forms.Label label1;
     }
 }
