@@ -63,6 +63,11 @@ namespace Jewellery_Repair_System
         private void Back_Button_Click(object sender, EventArgs e)
         {
             Inner_Body_Panel_Container.Controls["Main_Control"].BringToFront();
+            if (Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("View_Repair_Control"))
+            {
+                Inner_Body_Panel.Controls["View_Repair_Control"].Dispose();
+
+            }
         }
         private void Shutdown_Button_Click(object sender, EventArgs e)
         {
