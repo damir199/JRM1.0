@@ -213,6 +213,7 @@
     <Compile Include="Functional_Classes\Create_Outworker.cs" />
     <Compile Include="Functional_Classes\Create_Repair.cs" />
     <Compile Include="Functional_Classes\Employee_Login_Val.cs" />
+    <Compile Include="Functional_Classes\Find_Customer.cs" />
     <Compile Include="Functional_Classes\Find_Repair.cs" />
     <Compile Include="JSON\Customer_JSON.cs" />
     <Compile Include="JSON\Outworker_JSON.cs" />

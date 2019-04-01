@@ -33,12 +33,12 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Repair_Result_TB = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Search_Label = new System.Windows.Forms.Label();
+            this.View_Customer_Button = new System.Windows.Forms.Button();
             this.Search_Customer_Button = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Search_Label = new System.Windows.Forms.Label();
+            this.Customer_ID_TB = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.View_Customer_Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -104,7 +104,7 @@
             this.groupBox1.Controls.Add(this.View_Customer_Button);
             this.groupBox1.Controls.Add(this.Search_Customer_Button);
             this.groupBox1.Controls.Add(this.Search_Label);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.Customer_ID_TB);
             this.groupBox1.Location = new System.Drawing.Point(267, 80);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(216, 209);
@@ -112,15 +112,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search Criteria";
             // 
-            // Search_Label
+            // View_Customer_Button
             // 
-            this.Search_Label.AutoSize = true;
-            this.Search_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search_Label.Location = new System.Drawing.Point(48, 42);
-            this.Search_Label.Name = "Search_Label";
-            this.Search_Label.Size = new System.Drawing.Size(99, 20);
-            this.Search_Label.TabIndex = 4;
-            this.Search_Label.Text = "Customer ID";
+            this.View_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
+            this.View_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.View_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.View_Customer_Button.ForeColor = System.Drawing.Color.White;
+            this.View_Customer_Button.Location = new System.Drawing.Point(113, 129);
+            this.View_Customer_Button.Name = "View_Customer_Button";
+            this.View_Customer_Button.Size = new System.Drawing.Size(95, 74);
+            this.View_Customer_Button.TabIndex = 6;
+            this.View_Customer_Button.Text = "View";
+            this.View_Customer_Button.UseVisualStyleBackColor = false;
             // 
             // Search_Customer_Button
             // 
@@ -134,15 +137,26 @@
             this.Search_Customer_Button.TabIndex = 3;
             this.Search_Customer_Button.Text = "Search";
             this.Search_Customer_Button.UseVisualStyleBackColor = false;
+            this.Search_Customer_Button.Click += new System.EventHandler(this.Search_Customer_Button_Click);
             // 
-            // textBox1
+            // Search_Label
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 26);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "CST00000000000000001";
+            this.Search_Label.AutoSize = true;
+            this.Search_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_Label.Location = new System.Drawing.Point(48, 42);
+            this.Search_Label.Name = "Search_Label";
+            this.Search_Label.Size = new System.Drawing.Size(99, 20);
+            this.Search_Label.TabIndex = 4;
+            this.Search_Label.Text = "Customer ID";
+            // 
+            // Customer_ID_TB
+            // 
+            this.Customer_ID_TB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Customer_ID_TB.Location = new System.Drawing.Point(10, 88);
+            this.Customer_ID_TB.Name = "Customer_ID_TB";
+            this.Customer_ID_TB.Size = new System.Drawing.Size(195, 26);
+            this.Customer_ID_TB.TabIndex = 5;
+            this.Customer_ID_TB.Text = "CST00000000000000001";
             // 
             // groupBox3
             // 
@@ -168,19 +182,6 @@
             this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.listBox1.Size = new System.Drawing.Size(250, 142);
             this.listBox1.TabIndex = 10;
-            // 
-            // View_Customer_Button
-            // 
-            this.View_Customer_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(122)))), ((int)(((byte)(188)))));
-            this.View_Customer_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.View_Customer_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.View_Customer_Button.ForeColor = System.Drawing.Color.White;
-            this.View_Customer_Button.Location = new System.Drawing.Point(113, 129);
-            this.View_Customer_Button.Name = "View_Customer_Button";
-            this.View_Customer_Button.Size = new System.Drawing.Size(95, 74);
-            this.View_Customer_Button.TabIndex = 6;
-            this.View_Customer_Button.Text = "View";
-            this.View_Customer_Button.UseVisualStyleBackColor = false;
             // 
             // Find_Customer_Control
             // 
@@ -208,7 +209,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label Search_Label;
         private System.Windows.Forms.Button Search_Customer_Button;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Customer_ID_TB;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button View_Customer_Button;

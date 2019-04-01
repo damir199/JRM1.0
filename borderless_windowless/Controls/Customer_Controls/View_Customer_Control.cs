@@ -12,7 +12,7 @@ namespace Jewellery_Repair_System
 {
     public partial class View_User_Control : UserControl
     {
-        public View_User_Control()
+        public View_User_Control(List<String> Res)
         {
             InitializeComponent();
         }

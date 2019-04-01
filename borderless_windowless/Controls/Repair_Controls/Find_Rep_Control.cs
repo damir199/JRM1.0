@@ -36,12 +36,6 @@ namespace Jewellery_Repair_System
             }
            Main_Form.Instance.Inner_Body_Panel_Container.Controls["View_Repair_Control"].BringToFront();
 
-            Results_TB.Clear();
-            
-/*
-           *Results_TB.AppendText(item + Environment.NewLine);
-            *}
-            */
          
         }
     }
