@@ -29,11 +29,11 @@ namespace Jewellery_Repair_Window_2019.Functional_Classes
 
                 if (Repair == Repair_Number)
                 {
-                    res.Add("Repair Number: " + myitem.Repair_Number);
-                    res.Add("Category: " + myitem.Category);
-                    res.Add("Condition: " + myitem.Condition);
-                    res.Add("Work Required: " + myitem.Work_Required);
-                    res.Add("Notes: " + myitem.Notes);
+                    res.Add(myitem.Repair_Number);
+                    res.Add(myitem.Category);
+                    res.Add(myitem.Condition);
+                    res.Add(myitem.Work_Required);
+                    res.Add(myitem.Notes);
                     //returns the object corresponding to search query.
                     return res;
                 }

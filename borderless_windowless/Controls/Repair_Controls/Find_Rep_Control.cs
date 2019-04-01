@@ -21,14 +21,28 @@ namespace Jewellery_Repair_System
 
         private void Search_Repair_Button_Click(object sender, EventArgs e)
         {
-            Results_TB.Clear();
-            string input = Repair_ID_TB.Text.ToString();
-           List<String> Data = Find_Repair.Find_Repair_Query(input);
-            foreach (var item in Data) {
-                Results_TB.AppendText(item + Environment.NewLine);
-            }
+            if (Main_Form.Instance.Inner_Body_Panel_Container.Controls.ContainsKey("Find_Rep_Control"))
+            {
+                string input = Repair_ID_TB.Text.ToString();
+                List<String> Data = Find_Repair.Find_Repair_Query(input);
+                
 
-          
+                View_Repair_Control VRC = new View_Repair_Control(Data)
+                {
+                    Dock = DockStyle.Fill                   
+                };
+                Main_Form.Instance.Inner_Body_Panel_Container.Controls.Add(VRC);
+
+            }
+           Main_Form.Instance.Inner_Body_Panel_Container.Controls["View_Repair_Control"].BringToFront();
+
+            Results_TB.Clear();
+            
+/*
+           *Results_TB.AppendText(item + Environment.NewLine);
+            *}
+            */
+         
         }
     }
 }
